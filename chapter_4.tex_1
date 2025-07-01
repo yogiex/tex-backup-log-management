@@ -1,0 +1,149 @@
+\chapter{Presentation, Analysis, and Interpretation of Data}
+\label{chap:results}
+
+This chapter presents the implementation results of the proposed proactive forensic framework, as described in Chapter 3. The results are structured based on the nine log management processes outlined in NIST SP 800-92 and evaluated according to the phases defined in the framework development methodology.
+
+\section{Framework Implementation Overview}
+Figure~\ref{fig:structure-menu} shows the main menu structure of the log management application. The application integrates various functions, including log acquisition, storage, analysis, notification, preservation, and reporting, all designed to support proactive forensic readiness.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/structure menu.png}
+\caption{Log Management Structure Menu}
+\label{fig:structure-menu}
+\end{figure}
+
+\section{Log Management Results}
+\subsection{Log Identification}
+This phase identifies all relevant log sources from both infrastructure and application levels, including Apache, MySQL, syslog, and Moodle logs. Table~\ref{tab:quiz-attempts-log} and Table~\ref{tab:course-log} illustrate sample data.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=20cm]{figure/log-source.png}
+\caption{Log Source}
+\label{fig:log-source}
+\end{figure}
+
+\subsection{Proactive Log Collection}
+Logs are collected automatically using \texttt{crontab}, ensuring daily backups without disrupting the system. Figure~\ref{fig:scheduler} shows the scheduler interface.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/scheduler-crontab.png}
+\caption{Scheduler for Proactive Collection}
+\label{fig:scheduler}
+\end{figure}
+
+\subsection{Log Transmission}
+Collected logs are securely transmitted using \texttt{rsync} over SSH, ensuring data integrity and minimal bandwidth consumption.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/export-sql.png}
+\caption{Exporter Script}
+\label{fig:exporter}
+\end{figure}
+
+\subsection{Log Storage}
+Logs are stored in structured directories with timestamping and integrity verification via MD5 hashes. Figure~\ref{fig:logs-backup-linux} shows the backup structure.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log-backup-sql.png}
+\caption{Log Data Backup}
+\label{fig:logs-backup-linux}
+\end{figure}
+
+\subsection{Log Analysis and Anomaly Detection}
+Logs are analyzed using the Isolation Forest algorithm. Table~\ref{tab:classification_report} shows evaluation metrics. The ML model achieves an overall accuracy of 83%.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=14cm]{figure/flow-ml-model.png}
+\caption{Machine Learning Workflow}
+\label{fig:mlops}
+\end{figure}
+
+\subsection{Notification Mechanism}
+Telegram bot integration enables administrators to receive alerts. Manual confirmation is still required to trigger final notifications.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log-notification.jpeg}
+\caption{Notification via Telegram Bot}
+\label{fig:telegram-notification}
+\end{figure}
+
+\subsection{Log Preservation}
+Logs are preserved with integrity checks. Figures~\ref{fig:log-preservation-1} and \ref{fig:log-preservation-2} show the directory and detailed views of preserved logs.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log_preservation.png}
+\caption{Log Preservation Directory}
+\label{fig:log-preservation-1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log_preservation_detail.png}
+\caption{Detail of Log Preservation}
+\label{fig:log-preservation-2}
+\end{figure}
+
+\subsection{Log Reporting}
+PDF reports are generated summarizing user activity, scores, and anomaly detection results.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log_reporting_1.png}
+\caption{Reporting User}
+\label{fig:log_reporting_1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figure/log_reporting_2.png}
+\caption{Reporting User Download}
+\label{fig:log_reporting_2}
+\end{figure}
+
+\section{Summary of Verification}
+Table~\ref{tab:verifying_log_framework} summarizes the verification of each phase of the framework based on expected outcomes.
+
+\begin{table}[H]
+\centering
+\caption{Verifying Testing Framework Adopted from NIST 800-92}
+\label{tab:verifying_log_framework}
+\begin{tabular}{|p{3.2cm}|p{6cm}|p{4cm}|}
+\hline
+\textbf{Phase} & \textbf{Expected Result} & \textbf{Result} \ \hline
+Log Identification & All log sources identified & As Expected \ \hline
+Log Collection & Daily automatic collection & As Expected \ \hline
+Log Transmission & Secure \texttt{rsync} transfer & As Expected \ \hline
+Log Storage & Structured, timestamped, verified & As Expected \ \hline
+Log Analyzer & Dashboard with filters & As Expected \ \hline
+Log Analysis & ML-based anomaly detection & As Expected \ \hline
+Send Notification & Alert via Telegram bot & As Expected \ \hline
+Log Preservation & MD5 hash verification & As Expected \ \hline
+Log Reporting & PDF user activity summary & As Expected \ \hline
+\end{tabular}
+\end{table}
+
+\section{Comparison: Proactive vs Reactive Forensics}
+\begin{table}[H]
+\centering
+\caption{Comparison of Proactive and Reactive Forensic Based on Log Management Aspects}
+\label{tab:forensic-log-comparison}
+\begin{tabular}{|p{4cm}|p{5.5cm}|p{5.5cm}|}
+\hline
+\textbf{Aspect} & \textbf{Proactive Forensic} & \textbf{Reactive Forensic} \ \hline
+Log Generation & Configured before incidents & Enabled after incidents \ \hline
+Log Transmission & Scheduled, secure sync & Manual, delayed \ \hline
+Log Storage & Structured, tamper-evident & Ad-hoc, incomplete \ \hline
+Log Analysis & Real-time anomaly detection & Post-incident, incomplete \ \hline
+\end{tabular}
+\end{table}
+
+\section{Summary of Findings}
+The proposed framework successfully implements all phases of log management in accordance with NIST SP 800-92. The system enables proactive monitoring, automated alerts, tamper-evident preservation, and comprehensive reporting. It is suitable for digital forensics in online education environments.
