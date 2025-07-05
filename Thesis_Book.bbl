@@ -1,0 +1,239 @@
+\begin{thebibliography}{35}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abd~Hamid et~al.(2024)Abd~Hamid, Ab~Rahman, and
+  Cahyani]{abd2024enhancing}
+N.~Abd~Hamid, N.~H. Ab~Rahman, and N.~D.~W. Cahyani.
+\newblock Enhancing learning management systems with intrusion alerts and
+  forensic logging.
+\newblock \emph{International Journal of Advanced Research in Education and
+  Society}, 6\penalty0 (3):\penalty0 295--308, 2024.
+
+\bibitem[Adel et~al.(2024)Adel, Ahsan, and Davison]{adel2024ethicore}
+A.~Adel, A.~Ahsan, and C.~Davison.
+\newblock Ethicore: Ethical compliance and oversight framework for digital
+  forensic readiness.
+\newblock \emph{Information}, 15\penalty0 (6):\penalty0 363, 2024.
+
+\bibitem[Al-Fayoumi and Aboud(2017)]{al2017efficienteexamscheme}
+M.~Al-Fayoumi and S.~J. Aboud.
+\newblock An efficient e-exam scheme.
+\newblock \emph{Int. J. Emerg. Technol. Learn.}, 12\penalty0 (4):\penalty0
+  153--162, 2017.
+
+\bibitem[Alharbi et~al.(2011)Alharbi, Weber-Jahnke, and
+  Traore]{proactiveandreactivedigitalforensics}
+S.~Alharbi, J.~Weber-Jahnke, and I.~Traore.
+\newblock The proactive and reactive digital forensics investigation process: A
+  systematic literature review.
+\newblock In \emph{Information Security and Assurance: International
+  Conference, ISA 2011, Brno, Czech Republic, August 15-17, 2011. Proceedings},
+  pages 87--100. Springer, 2011.
+
+\bibitem[Barker and Tan(2018)]{barker2018openlogtools}
+J.~Barker and M.~Tan.
+\newblock Open-source log management tools as siem alternatives in small
+  enterprises.
+\newblock \emph{International Journal of Cyber Security and Digital Forensics},
+  7\penalty0 (4):\penalty0 201--209, 2018.
+
+\bibitem[Bradley(2021)]{bradley2021learninglms}
+V.~M. Bradley.
+\newblock Learning management system (lms) use with online instruction.
+\newblock \emph{International Journal of Technology in Education}, 4\penalty0
+  (1):\penalty0 68--92, 2021.
+
+\bibitem[Davidovič and Guliani(2015)]{davidovic2015cron}
+S.~Davidovič and K.~Guliani.
+\newblock Reliable cron across the planet.
+\newblock \emph{ACM Queue}, 13\penalty0 (3), Mar. 2015.
+
+\bibitem[Febriana et~al.(2023)Febriana, Luthfi,
+  et~al.]{febriana2023comparative}
+R.~Febriana, A.~Luthfi, et~al.
+\newblock Comparative study of cloud forensic investigation using adam and nist
+  800-86 methods in private cloud computing.
+\newblock \emph{Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)},
+  7\penalty0 (5):\penalty0 1097--1110, 2023.
+
+\bibitem[Garg and Goel(2023)]{garg2023preserving}
+M.~Garg and A.~Goel.
+\newblock Preserving integrity in online assessment using feature engineering
+  and machine learning.
+\newblock \emph{Expert Systems with Applications}, 225:\penalty0 120111, 2023.
+
+\bibitem[Halim et~al.(2019)Halim, Saad, Ramli, and Rozaini]{halim2019honeypot}
+I.~H.~A. Halim, A.~R.~M. Saad, N.~F.~N. Ramli, and A.~N.~M. Rozaini.
+\newblock Reducing honeypot log storage capacity consumption -- cron job with
+  perl-script approach.
+\newblock arXiv preprint arXiv:1911.07633, 2019.
+\newblock URL \url{https://arxiv.org/abs/1911.07633}.
+
+\bibitem[Johansen(2017)]{johansen2017Digitalforensicsandincidentresponse}
+G.~Johansen.
+\newblock \emph{Digital forensics and incident response}.
+\newblock Packt Publishing Ltd, 2017.
+
+\bibitem[Kadoic and Oreski(2018)]{kadoic2018analysis}
+N.~Kadoic and D.~Oreski.
+\newblock Analysis of student behavior and success based on logs in moodle.
+  2018 41st international convention on information and communication
+  technology, electronics and microelectronics, mipro 2018-proceedings,(pp.
+  654--659), 2018.
+
+\bibitem[Kent and Souppaya(2006)]{kentnist800922006guide}
+K.~A. Kent and M.~Souppaya.
+\newblock Guide to computer security log management:.
+\newblock 2006.
+
+\bibitem[Kern et~al.(2024)Kern, Landauer, Skopik, and Weippl]{kern2024logging}
+M.~Kern, M.~Landauer, F.~Skopik, and E.~Weippl.
+\newblock A logging maturity and decision model for the selection of intrusion
+  detection cyber security solutions.
+\newblock \emph{Computers \& Security}, 141:\penalty0 103844, 2024.
+
+\bibitem[Kumar(2019)]{kumar2019}
+A.~Kumar.
+\newblock Scalability and security issues in learning management systems.
+\newblock \emph{IEEE Access}, 7:\penalty0 150985--150995, 2019.
+
+\bibitem[Lakhno et~al.(2023)Lakhno, Adilzhanova, Ydyryshbayeva, Turgynbayeva,
+  Kryvoruchko, Chubaievskyi, and Desiatko]{lakhno2023adaptive}
+V.~Lakhno, S.~Adilzhanova, M.~Ydyryshbayeva, A.~Turgynbayeva, O.~Kryvoruchko,
+  V.~Chubaievskyi, and A.~Desiatko.
+\newblock Adaptive monitoring of companies' information security.
+\newblock \emph{International Journal of Electronics and Telecommunications},
+  69\penalty0 (1), 2023.
+
+\bibitem[Larchenko and Shevchenko(2025)]{larchenko2025mindmap}
+D.~Larchenko and O.~Shevchenko.
+\newblock Mind map-based classification of challenges in digital forensics.
+\newblock \emph{Journal of Information Security Research}, 18\penalty0
+  (2):\penalty0 112--120, 2025.
+\newblock \doi{10.1007/s10207-025-00621-x}.
+\newblock Used as basis for visualizing evidence loss categories in digital
+  forensics.
+
+\bibitem[Lintang et~al.(2024)Lintang, Cahyani, and Nugroho]{lintang2024log}
+Q.~K. Lintang, N.~D.~W. Cahyani, and M.~A. Nugroho.
+\newblock Log analyzer for english proficiency test cheating detection.
+\newblock In \emph{2024 12th International Conference on Information and
+  Communication Technology (ICoICT)}, pages 115--122. IEEE, 2024.
+
+\bibitem[Machaka and
+  Balan(2022)]{machaka2022InvestigatingProactiveDigitalForensicsLeveragingAdversaryEmulation}
+V.~Machaka and T.~Balan.
+\newblock Investigating proactive digital forensics leveraging adversary
+  emulation.
+\newblock \emph{Applied Sciences}, 12\penalty0 (18):\penalty0 9077, 2022.
+
+\bibitem[Nussbaum et~al.(2012)]{nussbaum2012performance}
+L.~Nussbaum et~al.
+\newblock Performance comparison of scp and rsync over variable latency and
+  bandwidth.
+\newblock In \emph{Proceedings of ...}, 2012.
+
+\bibitem[Paul~Joseph and Norman(2019)]{paul2019analysisdf}
+D.~Paul~Joseph and J.~Norman.
+\newblock An analysis of digital forensics in cyber security.
+\newblock In \emph{First International Conference on Artificial Intelligence
+  and Cognitive Computing: AICC 2018}, pages 701--708. Springer, 2019.
+
+\bibitem[Putra and Sari(2022)]{putra2022}
+D.~Putra and M.~Sari.
+\newblock Integration of artificial intelligence in learning management
+  systems.
+\newblock In \emph{Proceedings of the National Seminar on Information
+  Technology}, pages 98--105, 2022.
+
+\bibitem[Ranger et~al.(2020)Ranger, Schmidt, and Wolgast]{ranger2020detection}
+J.~Ranger, N.~Schmidt, and A.~Wolgast.
+\newblock The detection of cheating on e-exams in higher education—the
+  performance of several old and some new indicators.
+\newblock \emph{Frontiers in Psychology}, 11:\penalty0 568825, 2020.
+
+\bibitem[Rivera-Ortiz and Pasquale(2019)]{rivera2019towards}
+F.~Rivera-Ortiz and L.~Pasquale.
+\newblock Towards automated logging for forensic-ready software systems.
+\newblock In \emph{2019 IEEE 27th International Requirements Engineering
+  Conference Workshops (REW)}, pages 157--163. IEEE, 2019.
+
+\bibitem[Rosmansyah et~al.(2019)Rosmansyah, Ritonga, and
+  Hardi]{rosmansyah2019attackdefensetreeonaeexamsystem}
+Y.~Rosmansyah, M.~Ritonga, and A.~Hardi.
+\newblock An attack-defense tree on e-exam system.
+\newblock \emph{International Journal of Emerging Technologies in Learning
+  (iJET)}, 14\penalty0 (23):\penalty0 251--260, 2019.
+
+\bibitem[Rosmansyah et~al.(2020)Rosmansyah, Hendarto, and
+  Pratama]{rosmansyah2020impersonation}
+Y.~Rosmansyah, I.~Hendarto, and D.~Pratama.
+\newblock Impersonation attack-defense tree.
+\newblock \emph{International Journal of Emerging Technologies in Learning
+  (iJET)}, 15\penalty0 (19):\penalty0 239--246, 2020.
+
+\bibitem[Sivaprasad(2017)]{SPNFFb16}
+A.~Sivaprasad.
+\newblock Secured proactive network forensic framework.
+\newblock In \emph{2017 International Conference on Current Trends in Computer,
+  Electrical, Electronics and Communication (CTCEEC)}, pages 695--699, 2017.
+\newblock \doi{10.1109/CTCEEC.2017.8455003}.
+
+\bibitem[Smirani and Boulahia(2022)]{smirani2022algorithm}
+L.~K. Smirani and J.~A. Boulahia.
+\newblock An algorithm based on convolutional neural networks to manage online
+  exams via learning management system without using a webcam.
+\newblock \emph{International Journal of Advanced Computer Science and
+  Applications}, 13\penalty0 (3), 2022.
+
+\bibitem[Smith and Brown(2020)]{smith2020}
+J.~Smith and P.~Brown.
+\newblock A comparative study of moodle and google classroom in higher
+  education.
+\newblock \emph{International Journal of Information and Education Technology},
+  9\penalty0 (2):\penalty0 112--117, 2020.
+
+\bibitem[{StackExchange community}()]{stackexchange_rsync_scp_checksum}
+{StackExchange community}.
+\newblock Rsync and scp differences.
+\newblock
+  \url{https://serverfault.com/questions/194514/rsync-and-scp-differences}.
+\newblock Accessed July 2025.
+
+\bibitem[{StackExchange SuperUser community}()]{superuser_rsync_vs_scp}
+{StackExchange SuperUser community}.
+\newblock Why is rsync faster than scp?
+\newblock \url{https://superuser.com/questions/193952}.
+\newblock Accessed July 2025.
+
+\bibitem[Sylla et~al.(2022)Sylla, Babou, and Ouya]{sylla2022secure}
+K.~Sylla, B.~Babou, and S.~Ouya.
+\newblock Secure dematerialization of assessments in digital universities
+  through moodle, webrtc and safe exam browser (seb).
+\newblock \emph{International Association for Development of the Information
+  Society}, 2022.
+
+\bibitem[Venter and Kigwana(2018)]{venter2018digital}
+H.~Venter and I.~Kigwana.
+\newblock A digital forensic readiness architecture for online examinations.
+\newblock \emph{South African Computer Journal}, 30\penalty0 (1):\penalty0
+  1--39, 2018.
+
+\bibitem[Wang and Liu(2023)]{wang2023telegramalert}
+Y.~Wang and X.~Liu.
+\newblock A lightweight alerting system using telegram bot api for network
+  anomaly detection.
+\newblock \emph{International Journal of Computer Applications}, 185\penalty0
+  (12):\penalty0 45--51, 2023.
+
+\bibitem[Wijaya et~al.(2021)Wijaya, Nugroho, and Pratama]{wijaya2021}
+R.~Wijaya, S.~Nugroho, and L.~Pratama.
+\newblock Mobile-based lms usage in distance learning.
+\newblock \emph{Jurnal Teknologi Pendidikan}, 5\penalty0 (1):\penalty0 21--30,
+  2021.
+
+\end{thebibliography}

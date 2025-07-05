@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis_Book.aux
+A level-1 auxiliary file: ./a_cover.aux
+A level-1 auxiliary file: ./a_approval.aux
+A level-1 auxiliary file: ./a_declaration.aux
+A level-1 auxiliary file: ./a_abstract.aux
+A level-1 auxiliary file: ./a_abstrak.aux
+A level-1 auxiliary file: ./a_dedication.aux
+A level-1 auxiliary file: ./a_acknowledgments.aux
+A level-1 auxiliary file: ./a_preface.aux
+A level-1 auxiliary file: ./a_list_terms.aux
+A level-1 auxiliary file: ./chapter_1.aux
+A level-1 auxiliary file: ./chapter_2.aux
+A level-1 auxiliary file: ./chapter_3.aux
+A level-1 auxiliary file: ./chapter_4.aux
+A level-1 auxiliary file: ./chapter_5.aux
+The style file: abbrvnat.bst
+A level-1 auxiliary file: ./l_appendix_A.aux
+Database file #1: ref_database.bib
+Warning--empty journal in kentnist800922006guide
+Warning--empty year in stackexchange_rsync_scp_checksum
+Warning--empty year in superuser_rsync_vs_scp
+You've used 35 entries,
+            2773 wiz_defined-function locations,
+            818 strings with 12007 characters,
+and the built_in function-call counts, 16100 in all, are:
+= -- 1472
+> -- 838
+< -- 28
++ -- 284
+- -- 249
+* -- 1243
+:= -- 2419
+add.period$ -- 114
+call.type$ -- 35
+change.case$ -- 185
+chr.to.int$ -- 35
+cite$ -- 73
+duplicate$ -- 759
+empty$ -- 1386
+format.name$ -- 315
+if$ -- 3433
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 32
+newline$ -- 188
+num.names$ -- 140
+pop$ -- 381
+preamble$ -- 1
+purify$ -- 151
+quote$ -- 0
+skip$ -- 593
+stack$ -- 0
+substring$ -- 645
+swap$ -- 92
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 380
+warning$ -- 3
+while$ -- 153
+width$ -- 0
+write$ -- 465
+(There were 3 warnings)
