@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.3)  3 JUL 2025 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.3)  7 JUL 2025 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1625,11 +1625,11 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [18 <./figure/framework-development-phase-4.png>]
-<figure/framework-development-phase-6.png, id=653, 1533.73pt x 3854.4pt>
+<figure/framework-development-phase-6.png, id=654, 1533.73pt x 3854.4pt>
 File: figure/framework-development-phase-6.png Graphic file (type png)
 <use figure/framework-development-phase-6.png>
 Package pdftex.def Info: figure/framework-development-phase-6.png  used on inpu
-t line 143.
+t line 144.
 (pdftex.def)             Requested size: 158.4838pt x 398.33858pt.
 
 
@@ -1672,7 +1672,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 
  (./chapter_4.tex
 CHAPTER 4.
-<figure/structure menu.png, id=682, 814.04124pt x 743.77875pt>
+<figure/structure menu.png, id=687, 814.04124pt x 743.77875pt>
 File: figure/structure menu.png Graphic file (type png)
 <use figure/structure menu.png>
 Package pdftex.def Info: figure/structure menu.png  used on input line 5.
@@ -1691,7 +1691,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 
 
  <./figure/structure menu.png>]
-<figure/df-evidence-loss.png, id=690, 1901.1025pt x 3854.4pt>
+<figure/df-evidence-loss.png, id=695, 1901.1025pt x 3854.4pt>
 File: figure/df-evidence-loss.png Graphic file (type png)
 <use figure/df-evidence-loss.png>
 Package pdftex.def Info: figure/df-evidence-loss.png  used on input line 37.
@@ -1806,7 +1806,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [28]
-<figure/log-source.png, id=727, 2090.81125pt x 3854.4pt>
+<figure/log-source.png, id=732, 2090.81125pt x 3854.4pt>
 File: figure/log-source.png Graphic file (type png)
 <use figure/log-source.png>
 Package pdftex.def Info: figure/log-source.png  used on input line 146.
@@ -1917,7 +1917,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [34]
-<figure/erd-database-quiz-attempts.png, id=816, 3044.37375pt x 3854.4pt>
+<figure/erd-database-quiz-attempts.png, id=821, 3044.37375pt x 3854.4pt>
 File: figure/erd-database-quiz-attempts.png Graphic file (type png)
 <use figure/erd-database-quiz-attempts.png>
 Package pdftex.def Info: figure/erd-database-quiz-attempts.png  used on input l
@@ -1933,7 +1933,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [35 <./figure/erd-database-quiz-attempts.png>]
-<figure/sandbox-log-eprt.png, id=822, 331.2375pt x 170.88844pt>
+<figure/sandbox-log-eprt.png, id=827, 331.2375pt x 170.88844pt>
 File: figure/sandbox-log-eprt.png Graphic file (type png)
 <use figure/sandbox-log-eprt.png>
 Package pdftex.def Info: figure/sandbox-log-eprt.png  used on input line 322.
@@ -2247,7 +2247,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 [37
 
 ]
-<figure/scheduler-crontab.png, id=837, 950.04938pt x 455.45157pt>
+<figure/scheduler-crontab.png, id=842, 950.04938pt x 455.45157pt>
 File: figure/scheduler-crontab.png Graphic file (type png)
 <use figure/scheduler-crontab.png>
 Package pdftex.def Info: figure/scheduler-crontab.png  used on input line 400.
@@ -2264,12 +2264,12 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 [38
 
  <./figure/scheduler-crontab.png>]
-<figure/export-sql.png, id=849, 811.53188pt x 274.02374pt>
+<figure/export-sql.png, id=854, 811.53188pt x 274.02374pt>
 File: figure/export-sql.png Graphic file (type png)
 <use figure/export-sql.png>
 Package pdftex.def Info: figure/export-sql.png  used on input line 417.
 (pdftex.def)             Requested size: 398.33858pt x 134.50696pt.
-<figure/ml-workflow.png, id=850, 629.35126pt x 380.42125pt>
+<figure/ml-workflow.png, id=855, 629.35126pt x 380.42125pt>
 File: figure/ml-workflow.png Graphic file (type png)
 <use figure/ml-workflow.png>
 Package pdftex.def Info: figure/ml-workflow.png  used on input line 426.
@@ -2284,7 +2284,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [39 <./figure/export-sql.png>]
-<figure/log-backup-sql.png, id=861, 920.68968pt x 420.06938pt>
+<figure/log-backup-sql.png, id=866, 920.68968pt x 420.06938pt>
 File: figure/log-backup-sql.png Graphic file (type png)
 <use figure/log-backup-sql.png>
 Package pdftex.def Info: figure/log-backup-sql.png  used on input line 438.
@@ -2317,7 +2317,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [42]
-<figure/flow-ml-model.png, id=879, 1718.42pt x 3854.4pt>
+<figure/flow-ml-model.png, id=884, 1718.42pt x 3854.4pt>
 File: figure/flow-ml-model.png Graphic file (type png)
 <use figure/flow-ml-model.png>
 Package pdftex.def Info: figure/flow-ml-model.png  used on input line 529.
@@ -2332,7 +2332,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [43]
-<figure/flow-analysis-data.png, id=885, 1081.03876pt x 3853.39626pt>
+<figure/flow-analysis-data.png, id=890, 1081.03876pt x 3853.39626pt>
 File: figure/flow-analysis-data.png Graphic file (type png)
 <use figure/flow-analysis-data.png>
 Package pdftex.def Info: figure/flow-analysis-data.png  used on input line 541.
@@ -2372,7 +2372,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [46]
-<figure/log_attempt_step.png, id=913, 1439.3775pt x 714.41907pt>
+<figure/log_attempt_step.png, id=918, 1439.3775pt x 714.41907pt>
 File: figure/log_attempt_step.png Graphic file (type png)
 <use figure/log_attempt_step.png>
 Package pdftex.def Info: figure/log_attempt_step.png  used on input line 620.
@@ -2387,7 +2387,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [47]
-<figure/findings_20240809_215805.png, id=920, 1008.76875pt x 408.77719pt>
+<figure/findings_20240809_215805.png, id=925, 1008.76875pt x 408.77719pt>
 File: figure/findings_20240809_215805.png Graphic file (type png)
 <use figure/findings_20240809_215805.png>
 Package pdftex.def Info: figure/findings_20240809_215805.png  used on input lin
@@ -2404,12 +2404,12 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 
 [48 <./figure/log_attempt_step.png> <./figure/findings_20240809_215805.png (PNG
  copy)>]
-<figure/log-notification.jpeg, id=929, 527.72156pt x 163.3603pt>
+<figure/log-notification.jpeg, id=934, 527.72156pt x 163.3603pt>
 File: figure/log-notification.jpeg Graphic file (type jpg)
 <use figure/log-notification.jpeg>
 Package pdftex.def Info: figure/log-notification.jpeg  used on input line 642.
 (pdftex.def)             Requested size: 398.33858pt x 123.3076pt.
-<figure/log_preservation.png, id=931, 1442.38875pt x 699.36281pt>
+<figure/log_preservation.png, id=936, 1442.38875pt x 699.36281pt>
 File: figure/log_preservation.png Graphic file (type png)
 <use figure/log_preservation.png>
 Package pdftex.def Info: figure/log_preservation.png  used on input line 653.
@@ -2424,7 +2424,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [49 <./figure/log-notification.jpeg>]
-<figure/log_preservation_detail.png, id=938, 1440.13031pt x 688.82344pt>
+<figure/log_preservation_detail.png, id=943, 1440.13031pt x 688.82344pt>
 File: figure/log_preservation_detail.png Graphic file (type png)
 <use figure/log_preservation_detail.png>
 Package pdftex.def Info: figure/log_preservation_detail.png  used on input line
@@ -2458,12 +2458,12 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [52]
-<figure/log_reporting_1.png, id=956, 1415.2875pt x 491.58656pt>
+<figure/log_reporting_1.png, id=961, 1415.2875pt x 491.58656pt>
 File: figure/log_reporting_1.png Graphic file (type png)
 <use figure/log_reporting_1.png>
 Package pdftex.def Info: figure/log_reporting_1.png  used on input line 778.
 (pdftex.def)             Requested size: 284.52756pt x 98.82564pt.
-<figure/log_reporting_2.png, id=957, 1169.87062pt x 545.03625pt>
+<figure/log_reporting_2.png, id=962, 1169.87062pt x 545.03625pt>
 File: figure/log_reporting_2.png Graphic file (type png)
 <use figure/log_reporting_2.png>
 Package pdftex.def Info: figure/log_reporting_2.png  used on input line 785.
@@ -2509,13 +2509,13 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 File: figure/log-management-nist-800-92-original.png Graphic file (type png)
 <use figure/log-management-nist-800-92-original.png>
 Package pdftex.def Info: figure/log-management-nist-800-92-original.png  used o
-n input line 885.
+n input line 887.
 (pdftex.def)             Requested size: 398.33858pt x 37.13167pt.
-<figure/proactive-collection.png, id=973, 3854.4pt x 210.7875pt>
+<figure/proactive-collection.png, id=979, 3854.4pt x 210.7875pt>
 File: figure/proactive-collection.png Graphic file (type png)
 <use figure/proactive-collection.png>
 Package pdftex.def Info: figure/proactive-collection.png  used on input line 89
-3.
+5.
 (pdftex.def)             Requested size: 398.33858pt x 21.78114pt.
 
 
@@ -2527,11 +2527,11 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [55]
-<figure/framework-adopted-nist-800-92.png, id=981, 1687.30376pt x 3854.4pt>
+<figure/framework-adopted-nist-800-92.png, id=986, 1687.30376pt x 3854.4pt>
 File: figure/framework-adopted-nist-800-92.png Graphic file (type png)
 <use figure/framework-adopted-nist-800-92.png>
 Package pdftex.def Info: figure/framework-adopted-nist-800-92.png  used on inpu
-t line 901.
+t line 903.
 (pdftex.def)             Requested size: 249.094pt x 569.05511pt.
 
 
@@ -2552,172 +2552,172 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [57 <./figure/framework-adopted-nist-800-92.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 926--927
+Underfull \hbox (badness 10000) in paragraph at lines 928--929
 \OT1/cmr/m/n/10.95 from de-vices post-incident;
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 926--927
+Underfull \hbox (badness 7963) in paragraph at lines 928--929
 \OT1/cmr/m/n/10.95 trans-mis-sion is re-ac-tive and
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 928--928
+Underfull \hbox (badness 1142) in paragraph at lines 930--930
 []|\OT1/cmr/m/n/10.95 Logs are stored se-curely with
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 928--928
+Underfull \hbox (badness 2221) in paragraph at lines 930--930
 \OT1/cmr/m/n/10.95 de-fined re-ten-tion pe-ri-ods, us-
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 928--928
+Underfull \hbox (badness 1852) in paragraph at lines 930--930
 \OT1/cmr/m/n/10.95 ing struc-tured di-rec-to-ries and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log Iden-ti-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Identify all log
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 957--957
+Underfull \hbox (badness 1622) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Legacy sys-tems with
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 957--957
+Underfull \hbox (badness 1867) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 non-standard for-mats
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log Proac-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Automated daily
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log Trans-mis-
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 957--957
+Underfull \hbox (badness 6477) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 File trans-fer us-
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 957--957
+Underfull \hbox (badness 1259) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Network la-tency, en-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 957--957
+Underfull \hbox (badness 2662) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Centralized struc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 tured di-rec-tory
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 957--957
+Underfull \hbox (badness 7344) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Scalability, re-ten-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 pol-icy en-force-ment,
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 957--957
+Underfull \hbox (badness 3746) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 logs (e.g., un-re-lated
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 957--957
+Underfull \hbox (badness 4967) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 Apache2 web server
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Organized, times-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log Proac-tive
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 957--957
+Underfull \hbox (badness 2653) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log anomaly de-
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 957--957
+Underfull \hbox (badness 1502) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 tec-tion us-ing ML
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 957--957
+Underfull \hbox (badness 1038) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 tun-ing thresh-old val-
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 957--957
+Underfull \hbox (badness 7064) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Preliminary anomaly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Send No-ti-fi-ca-
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 957--957
+Underfull \hbox (badness 3386) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Notification work-flow
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Log Preser-va-
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 957--957
+Underfull \hbox (badness 1596) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 CSV ex-port with
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 957--957
+Underfull \hbox (badness 1221) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 MD5 hash check-
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 957--957
+Underfull \hbox (badness 1308) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Verified and tamper-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
 []|\OT1/cmr/m/n/10.95 Report stan-dard-iza-
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 957--957
+Underfull \hbox (badness 5064) in paragraph at lines 959--959
 \OT1/cmr/m/n/10.95 tion and for-mat-ting
  []
 
@@ -2803,7 +2803,7 @@ Package fancyhdr Warning: \headheight is too small (1.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.59999pt}.
 
 [64]
-Underfull \hbox (badness 1314) in paragraph at lines 201--206
+Underfull \hbox (badness 1314) in paragraph at lines 209--214
 []\OT1/cmr/m/n/10.95 StackExchange com-mu-nity.  Rsync and scp dif-fer-ences.  
 []$\OT1/cmtt/m/n/10.95 https : / / serverfault . com /
  []
@@ -2866,10 +2866,10 @@ Package rerunfilecheck Info: File `Thesis_Book.out' has not changed.
 (rerunfilecheck)             Checksum: 24977BAACDEA3ACB932796E073425B7B;8316.
  ) 
 Here is how much of TeX's memory you used:
- 19004 strings out of 474222
- 308273 string characters out of 5748734
+ 19012 strings out of 474222
+ 308487 string characters out of 5748734
  2195975 words of memory out of 5000000
- 40523 multiletter control sequences out of 15000+600000
+ 40529 multiletter control sequences out of 15000+600000
  570614 words of font info for 84 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  94i,13n,107p,1204b,1306s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2885,10 +2885,10 @@ lic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Thesis_Book.pdf (81 pages, 4091660 bytes).
+Output written on Thesis_Book.pdf (81 pages, 4093092 bytes).
 PDF statistics:
- 1187 PDF objects out of 1200 (max. 8388607)
- 1000 compressed objects within 10 object streams
- 325 named destinations out of 1000 (max. 500000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 1005 compressed objects within 11 object streams
+ 327 named destinations out of 1000 (max. 500000)
  638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

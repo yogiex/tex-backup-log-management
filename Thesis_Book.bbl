@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -131,6 +131,14 @@ V.~Machaka and T.~Balan.
   emulation.
 \newblock \emph{Applied Sciences}, 12\penalty0 (18):\penalty0 9077, 2022.
 
+\bibitem[Marturana et~al.(2020)Marturana, Malvisi, Me, and
+  Visconti]{marturana2020evaluation}
+F.~Marturana, C.~Malvisi, A.~Me, and I.~Visconti.
+\newblock Evaluation framework for digital forensic tools: A practical
+  approach.
+\newblock \emph{Digital Investigation}, 33:\penalty0 301020, 2020.
+\newblock \doi{10.1016/j.diin.2020.301020}.
+
 \bibitem[Nussbaum et~al.(2012)]{nussbaum2012performance}
 L.~Nussbaum et~al.
 \newblock Performance comparison of scp and rsync over variable latency and
@@ -209,6 +217,14 @@ J.~Smith and P.~Brown.
 \newblock Why is rsync faster than scp?
 \newblock \url{https://superuser.com/questions/193952}.
 \newblock Accessed July 2025.
+
+\bibitem[Stoykova and Franke(2023)]{stoykova2023rvef}
+R.~Stoykova and K.~Franke.
+\newblock Reliability validation enabling framework (rvef) for digital
+  forensics in criminal investigations.
+\newblock \emph{Forensic Science International: Digital Investigation},
+  45:\penalty0 301554, 2023.
+\newblock \doi{10.1016/j.fsidi.2023.301554}.
 
 \bibitem[Sylla et~al.(2022)Sylla, Babou, and Ouya]{sylla2022secure}
 K.~Sylla, B.~Babou, and S.~Ouya.

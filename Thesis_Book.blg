@@ -21,45 +21,45 @@ Database file #1: ref_database.bib
 Warning--empty journal in kentnist800922006guide
 Warning--empty year in stackexchange_rsync_scp_checksum
 Warning--empty year in superuser_rsync_vs_scp
-You've used 35 entries,
+You've used 37 entries,
             2773 wiz_defined-function locations,
-            818 strings with 12007 characters,
-and the built_in function-call counts, 16100 in all, are:
-= -- 1472
-> -- 838
-< -- 28
-+ -- 284
-- -- 249
-* -- 1243
-:= -- 2419
-add.period$ -- 114
-call.type$ -- 35
-change.case$ -- 185
-chr.to.int$ -- 35
-cite$ -- 73
-duplicate$ -- 759
-empty$ -- 1386
-format.name$ -- 315
-if$ -- 3433
+            832 strings with 12462 characters,
+and the built_in function-call counts, 17086 in all, are:
+= -- 1561
+> -- 898
+< -- 29
++ -- 304
+- -- 267
+* -- 1328
+:= -- 2575
+add.period$ -- 122
+call.type$ -- 37
+change.case$ -- 197
+chr.to.int$ -- 37
+cite$ -- 77
+duplicate$ -- 800
+empty$ -- 1463
+format.name$ -- 337
+if$ -- 3638
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 188
-num.names$ -- 140
-pop$ -- 381
+missing$ -- 34
+newline$ -- 200
+num.names$ -- 148
+pop$ -- 399
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 161
 quote$ -- 0
-skip$ -- 593
+skip$ -- 625
 stack$ -- 0
-substring$ -- 645
-swap$ -- 92
+substring$ -- 685
+swap$ -- 94
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 380
+type$ -- 402
 warning$ -- 3
-while$ -- 153
+while$ -- 161
 width$ -- 0
-write$ -- 465
+write$ -- 495
 (There were 3 warnings)
