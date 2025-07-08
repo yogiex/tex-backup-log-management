@@ -12,26 +12,26 @@ The picture above \ref{fig:structure-menu} is a menu structure. the menu structu
 \section{Phase 1}
 
 \subsection{Define Problem Statement}
-% \begin{figure}[H] 
-	%     \centering
-	%     \includegraphics[width=12cm]{figure/attack-defence-tree-model-online-exam.png}
-	%     \caption{Attack Defend Tree Model \citet{rosmansyah2019attackdefensetreeonaeexamsystem}}
-	%     \label{fig:attack-defend-tree-model}
-	% \end{figure}
+ \begin{figure}[H] 
+	     \centering% 
+	     \includegraphics[width=12cm]{figure/atk-def-online-exam.png}
+	     \caption{Attack Defence Tree Model \citet{rosmansyah2019attackdefensetreeonaeexamsystem}}
+     \label{fig:attack-defend-tree-model}
+ \end{figure}
 
-\begin{itemize}
-	\item Server Attack
-	\item Cheating Attack
-	\item Software Attack (e.g., errors in the application)
-	\item Client Device Attack
-	\begin{itemize}
-		\item Network Device Attack
-		\item Client Device Attack
-	\end{itemize}
-	\item Officer Attack (e.g., attack on proctor)
-	\item Examinee Attack
-\end{itemize}
-List above \citet{rosmansyah2019attackdefensetreeonaeexamsystem} is attack-defence tree model systematically illustrates how various forms of attacks can occur in an online exam system and how defence measures can be integrated at each potential attack point. With this model, exam organizers can be better prepared to anticipate threats and ensure the continuity and security of the online examination process.
+%\begin{itemize}
+%	\item Server Attack
+%	\item Cheating Attack
+%	\item Software Attack (e.g., errors in the application)
+%	\item Client Device Attack
+%	\begin{itemize}
+%		\item Network Device Attack
+%		\item Client Device Attack
+%	\end{itemize}
+%	\item Officer Attack (e.g., attack on proctor)
+%	\item Examinee Attack
+%\end{itemize}
+Figure \ref{fig:attack-defend-tree-model} above \citet{rosmansyah2019attackdefensetreeonaeexamsystem} is attack-defence tree model systematically illustrates how various forms of attacks can occur in an online exam system and how defence measures can be integrated at each potential attack point. With this model, exam organizers can be better prepared to anticipate threats and ensure the continuity and security of the online examination process.
 \begin{figure}[H] 
 	\centering
 	\includegraphics[height=18cm]{figure/df-evidence-loss.png}
@@ -441,6 +441,26 @@ In the context of proactive forensic log management, the log storage component p
 \end{figure}
 
 Figure \ref{fig:logs-backup-linux} To ensure efficient log management and prevent data loss, user activity data from the MySQL database related to the English Proficiency Test (EPT) is collected daily and stored in a centralized system. Each log entry is timestamped for accurate tracking, while strategies like log rotation, compression, and regular backups safeguard against data loss. This streamlined approach optimizes storage, enhances accessibility, and ensures the availability of critical data for forensic analysis.
+
+\begin{table}[H]
+	\centering
+	\caption{Estimated Log Retention and Storage Planning Based on NIST SP 800-92}
+	\begin{tabular}{|p{3cm}|p{4.5cm}|p{4cm}|p{3cm}|}
+		\hline
+		\textbf{Retention Period} & \textbf{Use Case / Purpose} & \textbf{Example System (Daily Log Volume)} & \textbf{Total Storage Needed (Compressed)} \\
+		\hline
+		30 Days & Minimal audit requirement, troubleshooting, short-term forensic capture & 500 MB/day & ~15 GB \\
+		\hline
+		90 Days & Standard forensic readiness, compliance with most best practices & 1 GB/day & ~27 GB \\
+		\hline
+		180 Days & Extended audit trail for internal security analysis or legal hold & 1.5 GB/day & ~81 GB \\
+		\hline
+		365 Days & Long-term archival, legal evidence retention & 2 GB/day & ~219 GB \\
+		\hline
+	\end{tabular}
+	\label{tab:log_retention_nist}
+\end{table}
+
 
 \subsection{Analysis of the Data}
 

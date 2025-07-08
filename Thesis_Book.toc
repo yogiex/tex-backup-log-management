@@ -8,15 +8,14 @@
 \contentsline {chapter}{\numberline {}CONTENTS}{ix}{section*.8}%
 \contentsline {chapter}{\numberline {}LIST OF TABLES}{xi}{section*.10}%
 \contentsline {chapter}{\numberline {}LIST OF FIGURES}{xii}{section*.12}%
-\contentsline {chapter}{\numberline {}\textbf {LIST OF TERMS}}{xiii}{section*.14}%
+\contentsline {chapter}{\numberline {}\textbf {LIST OF TERMS}}{xiv}{section*.14}%
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Rationale}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Theoretical Framework}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Conceptual Framework/Paradigm}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Statement of the Problem}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Objective and Hypotheses}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Contribution}{5}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Assumption}{5}{section.1.7}%
+\contentsline {section}{\numberline {1.3}Statement of the Problem}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Objective and Hypotheses}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Contribution}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Assumption}{5}{section.1.6}%
 \contentsline {chapter}{\numberline {2}REVIEW OF LITERATURE AND STUDIES}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Related Literatures}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Related Studies}{8}{section.2.2}%
@@ -40,7 +39,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Proactive Collection}{39}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Log Transmission}{40}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Log Storage}{41}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Analysis of the Data}{42}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.5}Analysis of the Data}{43}{subsection.4.4.5}%
 \contentsline {subsection}{\numberline {4.4.6}Log Monitoring}{48}{subsection.4.4.6}%
 \contentsline {subsection}{\numberline {4.4.7}Notification}{50}{subsection.4.4.7}%
 \contentsline {subsection}{\numberline {4.4.8}Log Preservation}{51}{subsection.4.4.8}%
@@ -53,7 +52,7 @@
 \contentsline {section}{\numberline {4.8}Summary of Findings}{59}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Conclusion and Recommendations}{62}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{62}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations}{62}{section.5.2}%
-\contentsline {chapter}{\numberline {}BIBLIOGRAPHY}{64}{section.5.2}%
-\contentsline {chapter}{Appendices}{67}{section*.63}%
-\contentsline {chapter}{\numberline {A}Hasil Wawancara dengan Staf IT}{69}{appendix.A}%
+\contentsline {section}{\numberline {5.2}Recommendations}{63}{section.5.2}%
+\contentsline {chapter}{\numberline {}BIBLIOGRAPHY}{65}{section.5.2}%
+\contentsline {chapter}{Appendices}{68}{section*.66}%
+\contentsline {chapter}{\numberline {A}Hasil Wawancara dengan Staf IT}{70}{appendix.A}%

@@ -7,6 +7,32 @@ This study demonstrates that proactive forensics is a viable approach for enhanc
 The implementation of a framework based on NIST Special Publication 800-92 provides structured guidance in managing logs systematically. Integrating this standard with proactive forensic techniques improves the readiness and responsiveness of digital forensic activities, especially in academic environments. This integration supports secure log acquisition, centralized storage, anomaly detection, and evidence preservation.
 
 Furthermore, the application of machine learning, particularly anomaly detection using Isolation Forest, enhances the ability to identify potentially fraudulent behavior that might be overlooked through manual inspection. Overall, the proposed system contributes to the advancement of forensic readiness by combining structured log management with intelligent analysis mechanisms.
+\begin{table}[H]
+	\centering
+	\caption{Examples of Logging Configuration Settings (Adapted from NIST SP 800-92)}
+	\begin{tabular}{|p{5.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+		\hline
+		\textbf{Category} & \textbf{Low Impact Systems} & \textbf{Moderate Impact Systems} & \textbf{High Impact Systems} \\
+		\hline
+		How long to retain log data & 1 to 2 weeks & 1 to 3 months & 3 to 12 months \\
+		\hline
+		How often to rotate logs & Optional (if performed, at least weekly or every 25 MB) & Every 6 to 24 hours, or every 2 to 5 MB & Every 15 to 60 minutes, or every 0.5 to 1.0 MB \\
+		\hline
+		Frequency of transferring log data to the log management infrastructure & Every 3 to 24 hours & Every 15 to 60 minutes & At least every 5 minutes \\
+		\hline
+		How often log data needs to be analyzed & Every 1 to 7 days & Every 12 to 24 hours & At least 6 times a day \\
+		\hline
+		Log file integrity checking & Optional & Yes & Yes \\
+		\hline
+		Encryption of rotated logs & Optional & Optional & Yes \\
+		\hline
+		Whether log data transfers need to be encrypted or performed on a separate logging network & Optional & Yes, if feasible & Yes \\
+		\hline
+	\end{tabular}
+	\label{tab:logging_config_nist}
+\end{table}
+
+Table~\ref{tab:logging_config_nist} shows the recommended log management configurations according to NIST SP 800-92. These benchmarks serve as reference criteria for evaluating the proposed framework. Based on the analysis, our implementation achieves log rotation, integrity checking, and transfer intervals that align with the requirements for moderate to high-impact systems.
 
 \section{Recommendations}
 
