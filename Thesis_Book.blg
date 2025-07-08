@@ -25,47 +25,48 @@ Warning--entry type for "akubelajar2024" isn't style-file defined
 Warning--entry type for "tracedata2024" isn't style-file defined
 --line 410 of file ref_database.bib
 Warning--empty journal in kentnist800922006guide
+Warning--there's a number but no volume in mckemmish1999
 Warning--empty year in stackexchange_rsync_scp_checksum
 Warning--empty year in superuser_rsync_vs_scp
-You've used 42 entries,
+You've used 43 entries,
             2773 wiz_defined-function locations,
-            854 strings with 13430 characters,
-and the built_in function-call counts, 18735 in all, are:
-= -- 1709
-> -- 970
-< -- 34
-+ -- 331
-- -- 288
-* -- 1427
-:= -- 2832
-add.period$ -- 139
-call.type$ -- 42
-change.case$ -- 219
-chr.to.int$ -- 41
-cite$ -- 87
-duplicate$ -- 883
-empty$ -- 1619
-format.name$ -- 367
-if$ -- 3988
+            863 strings with 13628 characters,
+and the built_in function-call counts, 19106 in all, are:
+= -- 1746
+> -- 980
+< -- 35
++ -- 335
+- -- 291
+* -- 1455
+:= -- 2890
+add.period$ -- 143
+call.type$ -- 43
+change.case$ -- 223
+chr.to.int$ -- 42
+cite$ -- 90
+duplicate$ -- 903
+empty$ -- 1655
+format.name$ -- 371
+if$ -- 4065
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 36
-newline$ -- 227
-num.names$ -- 168
-pop$ -- 453
+missing$ -- 37
+newline$ -- 233
+num.names$ -- 172
+pop$ -- 460
 preamble$ -- 1
-purify$ -- 178
+purify$ -- 181
 quote$ -- 0
-skip$ -- 696
+skip$ -- 707
 stack$ -- 0
-substring$ -- 695
-swap$ -- 101
+substring$ -- 710
+swap$ -- 102
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 457
-warning$ -- 3
-while$ -- 176
+type$ -- 468
+warning$ -- 4
+while$ -- 181
 width$ -- 0
-write$ -- 559
-(There were 6 warnings)
+write$ -- 574
+(There were 7 warnings)
