@@ -16,17 +16,40 @@ The purpose of this research is to explore the application of proactive forensic
 
 \section{Rationale}
 
-The growing usage of Learning Management Systems (LMS) in training and education has made the problem of cheating on online tests more pertinent. Participants benefit from increased flexibility and accessibility while taking exams online, but maintaining exam integrity also becomes more difficult. Consequently, it is crucial in this situation to apply proactive forensics using a log management strategy.
-Given the complexity of today's fraud problems, a reactive approach for cheating detection where analysis is done after an incident has happened is no longer enough. Because proactive forensics can identify suspicious activity in real time, it provides a more sophisticated solution that enables institutions to take action before cheating happens.
+%The growing usage of Learning Management Systems (LMS) in training and education has made the problem of cheating on online tests more pertinent. Participants benefit from increased flexibility and accessibility while taking exams online, but maintaining exam integrity also becomes more difficult. Consequently, it is crucial in this situation to apply proactive forensics using a log management strategy.
+%Given the complexity of today's fraud problems, a reactive approach for cheating detection where analysis is done after an incident has happened is no longer enough. Because proactive forensics can identify suspicious activity in real time, it provides a more sophisticated solution that enables institutions to take action before cheating happens.
+The adoption of Learning Management Systems (LMS) in Indonesia has grown rapidly in recent years, especially accelerated by the COVID-19 pandemic. According to a recent report, internet penetration in Indonesia exceeded 77\% in early 2024, providing a strong foundation for the widespread use of online learning platforms \cite{intimedia2024}. In fact, secondary schools have been found to utilize LMS tools almost twice as much as universities, making them the most dominant sector in formal education for LMS adoption \cite{akubelajar2024}.
 
+Empirical studies also indicate that LMS usage significantly improves student learning outcomes in Indonesia. For example, research at the primary school level found that LMS contributed to 46.7\% of the variance in student performance (R$^2$ = 0.467) \cite{ucy2023}. Despite these advantages, challenges remain—such as limited student engagement and insufficient technical support in some institutions \cite{edukatif2023}.
 
+Given this rapid expansion and the projected value of the Indonesian online education platform market, which is estimated to reach IDR 60 trillion by 2029 \cite{tracedata2024}, ensuring the security and integrity of online examination systems through proactive forensic log management has become an urgent priority.
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/indonesia-online-platform-market.png}
+	\caption{Market Size and Growth Rate of Indonesia Online Education Platforms (2019--2024) \cite{tracedata2024}.}
+	\label{fig:market-growth}
+\end{figure}
+
+The widespread adoption of Learning Management Systems (LMS) in Indonesia has transformed the way educational institutions deliver instruction and assess student learning. As a result, crucial academic activities such as examinations, assignments, and student-instructor interactions are now conducted and recorded digitally within these platforms.
+
+However, the shift to digital learning environments introduces new challenges, especially in maintaining exam integrity and institutional reputation. In this context, the role of comprehensive log management becomes paramount. Every action within the LMS generates digital traces (logs), which, if systematically collected, stored, and analyzed, can serve as crucial evidence in detecting academic misconduct, troubleshooting system issues, and ensuring compliance with institutional policies.
+
+Without a robust log management strategy, institutions risk losing critical information that could be vital for investigating suspicious activities or resolving disputes. Therefore, as LMS usage continues to expand, the need for effective and proactive log management frameworks becomes an essential component of educational quality assurance and digital forensic readiness.
+
+Despite the numerous benefits brought by online learning, real-world incidents have highlighted the critical risks of poor log management. For instance, several Indonesian universities reported difficulties in investigating alleged cheating during high-stakes online exams due to missing or incomplete log data, which hampered both technical and legal resolution of the cases \cite{rosmansyah2019attackdefensetreeonaeexamsystem, lintang2024log}. These incidents underscore that without a robust, centralized, and proactive log management strategy, institutions not only risk losing vital forensic evidence but may also face reputational and regulatory consequences.
+
+Effective log management does not merely support post-incident investigation; it also enables institutions to fulfill compliance obligations, reduce the time required for incident response, and foster greater trust among students, faculty, and accreditation bodies \cite{rivera2019towards, abd2024enhancing}.
 % =========================================================
 \section{Theoretical Framework}
 
-Log management is the primary instrument used in this study's proactive forensic method to gather and examine log data that can indicate questionable activity in an online English proficiency test. By preserving the integrity of the data and the online test procedure, this method seeks to preventively identify possible fraud.
+This research adopts a theoretical foundation grounded in the principles of digital forensics, information security, and structured log management. The primary reference is the NIST Special Publication 800-92, which outlines the log management lifecycle comprising log generation, collection, transmission, storage, analysis, preservation, and reporting \cite{nist80092}. This framework ensures the integrity, availability, and traceability of digital evidence in online systems.
 
-This study, which is grounded in log management theory, uses user activity logs including access time, duration, and navigation patterns to identify unusual activities. Effective preventative measures and risk mitigation are designed using information security and digital forensic theories as a guide to guarantee the process's security and validity. The goal of integrating these theories is to preserve the security and integrity of online tests while actively preventing cheating.
+Digital forensics theory, as defined by McKemmish and subsequent researchers, emphasizes the systematic identification, preservation, analysis, and presentation of digital evidence \cite{mckemmish1999}. In the context of online examination systems, these principles require that all relevant events—such as user authentication, quiz attempts, and system access—are reliably captured and retained for potential forensic review.
+
+Furthermore, this study integrates contemporary advances in log analysis, specifically the use of machine learning algorithms for anomaly detection. Recent work highlights that unsupervised models, such as Isolation Forests, can effectively identify suspicious behaviors in LMS log data without requiring labeled datasets \cite{garg2023preserving, lintang2024log}.
+
+By combining the log lifecycle model from NIST SP 800-92 with digital forensic readiness principles and modern anomaly detection techniques, the proposed framework aims to provide a proactive and comprehensive solution for ensuring the security, reliability, and integrity of online examination processes.
 
 \section{Conceptual Framework/Paradigm}
 

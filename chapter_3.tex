@@ -62,31 +62,55 @@ The system infrastructure utilizes a Virtual Machine Scale Set (VMSS) to dynamic
     \caption{Proactive Forensic Framework Development Phase \citet{adel2024ethicore}}
     \label{fig:framework-development-phase}
 \end{figure}
+
 Figure~\ref{fig:framework-development-phase} presents the proposed framework development flow, adapted from Adel et al.~\cite{adel2024ethicore}. The framework consists of six phases: defining objectives, literature review, framework design, simulation, testing, and expert validation. 
 
 The last two phases testing and validation were added to evaluate the framework in real exam scenarios and to gather feedback from domain experts in digital forensics and educational systems. This ensures both technical reliability and practical relevance in online examination contexts.
 
+%\begin{table}[H]
+%\centering
+%\caption{Stages of Framework Development}
+%\begin{tabular}{|c|p{4.5cm}|p{8.5cm}|}
+%\hline
+%\textbf{No.} & \textbf{Stage} & \textbf{Description} \\
+%\hline
+%1 & Define Objectives and Requirements & Identify the primary goals and specific requirements for developing the forensic log management framework. \\
+%\hline
+%2 & Conduct Literature Review on Forensic Frameworks and Log Management Standards & Study existing research, models, and relevant standards (e.g., NIST SP 800-92) to gain insight and identify gaps. \\
+%\hline
+%3 & Design and Modify Framework Based on Identified Needs & Create or adapt framework components to match the defined objectives and contextual system needs. \\
+%\hline
+%4 & Develop and Simulate the Framework in a Test Environment & Implement the proposed framework in a controlled testbed to observe log flow and system behavior. \\
+%\hline
+%5 & Evaluate Framework Through Proactive Forensic Scenarios & Test the framework’s effectiveness by applying it to simulated forensic incidents or attack scenarios. \\
+%\hline
+%6 & Validate Results via Expert Review & Review and validate the framework through expert evaluation or feedback for reliability and improvement. \\
+%\hline
+%\end{tabular}
+%\end{table}
 \begin{table}[H]
-\centering
-\caption{Stages of Framework Development}
-\begin{tabular}{|c|p{4.5cm}|p{8.5cm}|}
-\hline
-\textbf{No.} & \textbf{Stage} & \textbf{Description} \\
-\hline
-1 & Define Objectives and Requirements & Identify the primary goals and specific requirements for developing the forensic log management framework. \\
-\hline
-2 & Conduct Literature Review on Forensic Frameworks and Log Management Standards & Study existing research, models, and relevant standards (e.g., NIST SP 800-92) to gain insight and identify gaps. \\
-\hline
-3 & Design and Modify Framework Based on Identified Needs & Create or adapt framework components to match the defined objectives and contextual system needs. \\
-\hline
-4 & Develop and Simulate the Framework in a Test Environment & Implement the proposed framework in a controlled testbed to observe log flow and system behavior. \\
-\hline
-5 & Evaluate Framework Through Proactive Forensic Scenarios & Test the framework’s effectiveness by applying it to simulated forensic incidents or attack scenarios. \\
-\hline
-6 & Validate Results via Expert Review & Review and validate the framework through expert evaluation or feedback for reliability and improvement. \\
-\hline
-\end{tabular}
+	\centering
+	\caption{Stages of Framework Development and Corresponding Outputs}
+	\begin{tabular}{|c|p{4cm}|p{6.5cm}|p{5cm}|}
+		\hline
+		\textbf{No.} & \textbf{Stage} & \textbf{Description} & \textbf{Output} \\
+		\hline
+		1 & Define Objectives and Requirements & Identify the primary goals and specific requirements for developing the forensic log management framework. & Problem statement, research objectives, research questions, and scope limitations. \\
+		\hline
+		2 & Conduct Literature Review on Forensic Frameworks and Log Management Standards & Study existing research, models, and relevant standards (e.g., NIST SP 800-92) to gain insight and identify gaps. & Summary table of existing models, identification of best practices, selected standards for adaptation. \\
+		\hline
+		3 & Design and Modify Framework Based on Identified Needs & Create or adapt framework components to match the defined objectives and contextual system needs. & Proposed log management framework diagram, modified NIST-based structure, system workflow design. \\
+		\hline
+		4 & Develop and Simulate the Framework in a Test Environment & Implement the proposed framework in a controlled testbed to observe log flow and system behavior. & Testbed setup (e.g., Moodle, VMs), crontab scripts, rsync config, sample collected log data. \\
+		\hline
+		5 & Evaluate Framework Through Proactive Forensic Scenarios & Test the framework’s effectiveness by applying it to simulated forensic incidents or attack scenarios. & Anomaly detection results, log dashboard screenshots, confusion matrix, classification report. \\
+		\hline
+		6 & Validate Results via Expert Review & Review and validate the framework through expert evaluation or feedback for reliability and improvement. & Expert interview summaries, validation questionnaire results, documentation of suggested improvements. \\
+		\hline
+	\end{tabular}
+	\label{tab:framework_dev_with_output}
 \end{table}
+
 
 Based on the framework development approach proposed by \citet{adel2024ethicore}, this research follows a structured process that begins with identifying existing forensic frameworks and relevant standards. The framework is then designed to address specific needs in digital forensics for online examination environments. To ensure that the framework is practical and effective, it is evaluated through scenario-based testing that simulates real forensic cases in online exams. Finally, validation is conducted by consulting experts in the field, including digital forensic professionals and education technology specialists, to assess the relevance, completeness, and applicability of the framework in real-world settings.
 

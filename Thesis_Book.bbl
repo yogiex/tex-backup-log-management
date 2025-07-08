@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -19,6 +19,12 @@ A.~Adel, A.~Ahsan, and C.~Davison.
   forensic readiness.
 \newblock \emph{Information}, 15\penalty0 (6):\penalty0 363, 2024.
 
+\bibitem[AkuBelajar(2024)]{akubelajar2024}
+AkuBelajar.
+\newblock Lms untuk membantu meningkatkan kemajuan pendidikan indonesia, 2024.
+\newblock URL
+  \url{https://www.akubelajar.id/blog/lms-untuk-membantu-meningkatkan-kemajuan-pendidikan-indonesia}.
+
 \bibitem[Al-Fayoumi and Aboud(2017)]{al2017efficienteexamscheme}
 M.~Al-Fayoumi and S.~J. Aboud.
 \newblock An efficient e-exam scheme.
@@ -33,6 +39,20 @@ S.~Alharbi, J.~Weber-Jahnke, and I.~Traore.
 \newblock In \emph{Information Security and Assurance: International
   Conference, ISA 2011, Brno, Czech Republic, August 15-17, 2011. Proceedings},
   pages 87--100. Springer, 2011.
+
+\bibitem[Author and Author(2023{\natexlab{a}})]{ucy2023}
+A.~Author and B.~Author.
+\newblock Pengaruh penggunaan learning management system (lms) terhadap hasil
+  belajar siswa sd.
+\newblock \emph{Jurnal FKIP UCY}, 2023{\natexlab{a}}.
+\newblock URL
+  \url{https://jurnal.ucy.ac.id/index.php/fkip/article/download/2393/2316}.
+
+\bibitem[Author and Author(2023{\natexlab{b}})]{edukatif2023}
+C.~Author and D.~Author.
+\newblock Analisis tingkat pemanfaatan moodle sebagai lms di perguruan tinggi.
+\newblock \emph{Edukatif: Jurnal Ilmu Pendidikan}, 2023{\natexlab{b}}.
+\newblock URL \url{https://edukatif.org/edukatif/article/view/6268}.
 
 \bibitem[Barker and Tan(2018)]{barker2018openlogtools}
 J.~Barker and M.~Tan.
@@ -72,6 +92,13 @@ I.~H.~A. Halim, A.~R.~M. Saad, N.~F.~N. Ramli, and A.~N.~M. Rozaini.
   perl-script approach.
 \newblock arXiv preprint arXiv:1911.07633, 2019.
 \newblock URL \url{https://arxiv.org/abs/1911.07633}.
+
+\bibitem[Intimedia(2024)]{intimedia2024}
+Intimedia.
+\newblock Beyond the classroom walls: The rise of online learning management
+  systems in indonesia, 2024.
+\newblock URL
+  \url{https://intimedia.id/read/beyond-the-classroom-walls-the-rise-of-online-learning-management-systems-in-indonesia}.
 
 \bibitem[Johansen(2017)]{johansen2017Digitalforensicsandincidentresponse}
 G.~Johansen.
@@ -163,6 +190,13 @@ J.~Ranger, N.~Schmidt, and A.~Wolgast.
 \newblock The detection of cheating on e-exams in higher education—the
   performance of several old and some new indicators.
 \newblock \emph{Frontiers in Psychology}, 11:\penalty0 568825, 2020.
+
+\bibitem[Research(2024)]{tracedata2024}
+T.~D. Research.
+\newblock Indonesia online education platforms market industry report
+  2024-2029, 2024.
+\newblock URL
+  \url{https://www.tracedataresearch.com/industry-report/indonesia-online-education-platforms-market}.
 
 \bibitem[Rivera-Ortiz and Pasquale(2019)]{rivera2019towards}
 F.~Rivera-Ortiz and L.~Pasquale.

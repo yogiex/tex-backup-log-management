@@ -18,48 +18,54 @@ A level-1 auxiliary file: ./chapter_5.aux
 The style file: abbrvnat.bst
 A level-1 auxiliary file: ./l_appendix_A.aux
 Database file #1: ref_database.bib
+Warning--entry type for "intimedia2024" isn't style-file defined
+--line 384 of file ref_database.bib
+Warning--entry type for "akubelajar2024" isn't style-file defined
+--line 390 of file ref_database.bib
+Warning--entry type for "tracedata2024" isn't style-file defined
+--line 410 of file ref_database.bib
 Warning--empty journal in kentnist800922006guide
 Warning--empty year in stackexchange_rsync_scp_checksum
 Warning--empty year in superuser_rsync_vs_scp
-You've used 37 entries,
+You've used 42 entries,
             2773 wiz_defined-function locations,
-            832 strings with 12462 characters,
-and the built_in function-call counts, 17086 in all, are:
-= -- 1561
-> -- 898
-< -- 29
-+ -- 304
-- -- 267
-* -- 1328
-:= -- 2575
-add.period$ -- 122
-call.type$ -- 37
-change.case$ -- 197
-chr.to.int$ -- 37
-cite$ -- 77
-duplicate$ -- 800
-empty$ -- 1463
-format.name$ -- 337
-if$ -- 3638
-int.to.chr$ -- 1
+            854 strings with 13430 characters,
+and the built_in function-call counts, 18735 in all, are:
+= -- 1709
+> -- 970
+< -- 34
++ -- 331
+- -- 288
+* -- 1427
+:= -- 2832
+add.period$ -- 139
+call.type$ -- 42
+change.case$ -- 219
+chr.to.int$ -- 41
+cite$ -- 87
+duplicate$ -- 883
+empty$ -- 1619
+format.name$ -- 367
+if$ -- 3988
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 34
-newline$ -- 200
-num.names$ -- 148
-pop$ -- 399
+missing$ -- 36
+newline$ -- 227
+num.names$ -- 168
+pop$ -- 453
 preamble$ -- 1
-purify$ -- 161
+purify$ -- 178
 quote$ -- 0
-skip$ -- 625
+skip$ -- 696
 stack$ -- 0
-substring$ -- 685
-swap$ -- 94
+substring$ -- 695
+swap$ -- 101
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 402
+type$ -- 457
 warning$ -- 3
-while$ -- 161
+while$ -- 176
 width$ -- 0
-write$ -- 495
-(There were 3 warnings)
+write$ -- 559
+(There were 6 warnings)
