@@ -39,20 +39,20 @@
 \contentsline {subsection}{\numberline {4.4.2}Proactive Collection}{39}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Log Transmission}{40}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Log Storage}{41}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Analysis of the Data}{43}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}Log Monitoring}{48}{subsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.4.7}Notification}{50}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Log Preservation}{51}{subsection.4.4.8}%
-\contentsline {subsection}{\numberline {4.4.9}Reporting}{54}{subsection.4.4.9}%
-\contentsline {section}{\numberline {4.5}Phase 5}{54}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Verification}{55}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Phase 6}{56}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Validation}{56}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Result of framework log management}{56}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Summary of Findings}{59}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Conclusion and Recommendations}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{62}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations}{63}{section.5.2}%
-\contentsline {chapter}{\numberline {}BIBLIOGRAPHY}{65}{section.5.2}%
-\contentsline {chapter}{Appendices}{68}{section*.66}%
-\contentsline {chapter}{\numberline {A}Hasil Wawancara dengan Staf IT}{70}{appendix.A}%
+\contentsline {subsection}{\numberline {4.4.5}Analysis of the Data}{44}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Log Monitoring}{49}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}Notification}{52}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Log Preservation}{53}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.9}Reporting}{56}{subsection.4.4.9}%
+\contentsline {section}{\numberline {4.5}Phase 5}{57}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Verification}{57}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Phase 6}{58}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Validation}{59}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Result of framework log management}{59}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Summary of Findings}{61}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Conclusion and Recommendations}{64}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{64}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations}{65}{section.5.2}%
+\contentsline {chapter}{\numberline {}BIBLIOGRAPHY}{67}{section.5.2}%
+\contentsline {chapter}{Appendices}{70}{section*.68}%
+\contentsline {chapter}{\numberline {A}Hasil Wawancara dengan Staf IT}{72}{appendix.A}%

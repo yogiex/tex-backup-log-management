@@ -114,6 +114,7 @@ This literature review provided both theoretical and practical direction for des
 	\end{tabular}
 \end{table}
 
+
 \section{Phase 3}
 Phase 3 focuses on designing and customizing the forensic log management framework according to the objectives and insights gathered in the previous phases. This design stage emphasizes a modular, scalable, and proactive architecture aligned with the principles of NIST SP 800-92 and adapted from the framework structure of Adel et al.
 
@@ -409,7 +410,7 @@ To facilitate log analysis related to online examinations within the Moodle plat
 \subsection{Log Transmission}
 To support secure and efficient log transmission, the system utilizes the \texttt{rsync} protocol to transfer collected log files from the master virtual machine (VM), which hosts the examination platform, to a centralized log storage server. The use of \texttt{rsync} enables incremental synchronization, ensuring that only updated or newly generated log data is transmitted, thereby reducing bandwidth usage and improving transfer speed. This transmission occurs as part of a scheduled routine executed daily after examination sessions conclude, ensuring timely backup and availability of log data for further analysis and archival.
 
-Rsync was selected over SCP for log transmission because it supports delta transfer, checksum verification, and transfer resumption—features that ensure both performance and integrity during multiple, incremental log backups. In contrast, SCP lacks these forensic-grade guarantees~\cite{nussbaum2012performance,superuser_rsync_vs_scp,stackexchange_rsync_scp_checksum}.
+Rsync was selected over SCP for log transmission because it supports delta transfer, checksum verification, and transfer resumption features that ensure both performance and integrity during multiple, incremental log backups. In contrast, SCP lacks these forensic-grade guarantees~\cite{nussbaum2012performance,superuser_rsync_vs_scp,stackexchange_rsync_scp_checksum}.
 
 
 \begin{figure}[H] 
@@ -461,11 +462,66 @@ Figure \ref{fig:logs-backup-linux} To ensure efficient log management and preven
 	\label{tab:log_retention_nist}
 \end{table}
 
+\begin{table}[H]
+	\centering
+	\caption{Role Definition and Access Rights for Log Storage}
+	\begin{tabular}{|l|p{7cm}|p{3cm}|}
+		\hline
+		\textbf{Role} & \textbf{Description} & \textbf{Access Rights} \\ \hline
+		Log Manager (Admin) & Responsible for the overall management, configuration, and integrity of log storage. Has full control over log preservation processes, including backup, restoration, and access management. & Read, Write, Delete \\ \hline
+		Forensic Investigator & Authorized to access and review preserved logs for auditing, incident investigation, or forensic analysis. & Read Only \\ \hline
+		System Operator & Maintains and operates system infrastructure. No direct access to the contents of log storage, except for maintenance of the underlying storage platform. & No Access to Logs \\ \hline
+		General User & Standard users without any administrative or forensic duties. Cannot access, read, modify, or delete any preserved log files. & No Access \\ \hline
+	\end{tabular}
+	\label{tab:role_access_log_storage}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Manage Long-Term Log Data Storage}
+	\begin{tabular}{|p{4cm}|p{9cm}|}
+		\hline
+		\textbf{Step} & \textbf{Description} \\
+		\hline
+		Establish Retention Policy & Define retention periods for each log type based on regulatory, legal, and organizational requirements. Document the policy and review it regularly. \\
+		\hline
+		Archive Logs & Move logs from active storage to secure, long-term archival storage (on-premise or cloud), applying compression and encryption as necessary. \\
+		\hline
+		Ensure Integrity & Generate and store cryptographic hashes (e.g., SHA-256) for each archived log file. Periodically verify hashes to detect any tampering. \\
+		\hline
+		Implement Access Controls & Restrict access to archived logs using role-based permissions. Maintain an access log/audit trail for all actions on archived data. \\
+		\hline
+		Perform Periodic Backups & Back up archived logs to multiple locations to prevent data loss. Test restore procedures regularly. \\
+		\hline
+		Monitor Storage Utilization & Track storage usage and forecast capacity needs to ensure scalability and compliance with retention requirements. \\
+		\hline
+		Plan for Secure Deletion & When retention period expires, securely delete logs using cryptographic erase or certified data destruction methods. Document deletion actions. \\
+		\hline
+		Document All Actions & Maintain comprehensive documentation of all archival, access, verification, backup, and deletion activities for audit and compliance. \\
+		\hline
+	\end{tabular}
+	\label{tab:long_term_log_storage}
+\end{table}
+
+
 
 \subsection{Analysis of the Data}
 
 The data collection process has been completed. The next step involves analyzing the gathered data, specifically the data of exam participants who have attempted the EPRT quiz. Two key indicators will be considered:
 
+\begin{table}[H]
+	\centering
+	\caption{Features Used for Analysis Data}
+	\begin{tabular}{|l|p{10cm}|c|}
+		\hline
+		\textbf{Feature} & \textbf{Details} & \textbf{Data Value} \\
+		\hline
+		\textbf{Time\_taken} & Time taken by examinee to finish the session by calculating the difference of timestamp between examinee’s start time and finish time & 00:19:14 \\
+		\hline
+		\textbf{score} & Score of an examinee in a session, this represents how many questions the examinee answered correctly & 22 \\
+		\hline
+	\end{tabular}
+\end{table}
 
 \begin{table}[H]
 	\centering
@@ -529,19 +585,7 @@ Key attributes used include:
 \end{itemize}
 
 
-\begin{table}[H]
-	\centering
-	\caption{Features Used for Analysis Data}
-	\begin{tabular}{|l|p{10cm}|c|}
-		\hline
-		\textbf{Feature} & \textbf{Details} & \textbf{Data Value} \\
-		\hline
-		\textbf{Time\_taken} & Time taken by examinee to finish the session by calculating the difference of timestamp between examinee’s start time and finish time & 00:19:14 \\
-		\hline
-		\textbf{score} & Score of an examinee in a session, this represents how many questions the examinee answered correctly & 22 \\
-		\hline
-	\end{tabular}
-\end{table}
+
 
 
 \begin{figure}[H] 
@@ -558,7 +602,7 @@ The machine learning model was trained using a dataset comprising 223 labeled in
 
 \begin{figure}[H] 
 	\centering
-	\includegraphics[height=14cm]{figure/flow-analysis-data.png}
+	\includegraphics[height=18cm]{figure/flow-analysis-data.png}
 	\caption{Flowchart Log Analysis }
 	\label{fig:flow-analysis-log}
 \end{figure}
@@ -637,7 +681,7 @@ Based on these reasons, a custom dashboard provides an ideal platform for valida
 
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=16cm]{figure/log_attempt_step.png}
+	\includegraphics[width=18cm]{figure/log_attempt_step.png}
 	\caption{Log Attempt Step}
 	\label{fig:log-attempt-step}
 \end{figure}
@@ -646,12 +690,26 @@ Figure~\ref{fig:log-attempt-step} illustrates the sequential log attempt steps r
 The main states observed in the figure include \texttt{todo}, which signifies that the question was displayed to the participant but has not been answered; \texttt{complete}, indicating the participant submitted an answer; and two graded states: \texttt{gradedwrong} and \texttt{gradedright}, which show the automatic evaluation outcome of the submitted response. These log steps are timestamped and ordered, providing a temporal context for each transition.
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=14cm]{figure/findings_20240809_215805.png}
+	\includegraphics[width=18cm]{figure/findings_20240809_215805.png}
 	\caption{Finding user}
 	\label{fig:findings-user}
 \end{figure}
 
 The figure \ref{fig:findings-user} to find case with user to indication cheating. On this page, there are users who are suspected of cheating. The data obtained will be stored in a database, including the timestamp and information on when the user committed the cheating. Therefore, the proctor will conduct another check after the exam.
+
+The use of Flask REST API as the backend for log monitoring offers several significant advantages, especially in environments requiring integration with machine learning models for anomaly detection or advanced analytics.
+
+\begin{itemize}
+	\item \textbf{Seamless Integration with Machine Learning Models:} Flask, a lightweight and flexible Python web framework, enables straightforward integration of Python-based machine learning models into the backend. This is particularly beneficial since many machine learning libraries (such as \texttt{scikit-learn}, \texttt{TensorFlow}, or \texttt{PyTorch}) are natively supported in Python. As a result, trained models can be loaded, updated, and used for real-time inference directly within Flask endpoints, facilitating automated and scalable log analysis~\cite{garg2023preserving}.
+	
+	\item \textbf{RESTful API Design for Interoperability:} Flask REST API allows the development of standardized endpoints for receiving, processing, and returning log data and analysis results. This RESTful design ensures that the backend can communicate easily with various frontend dashboards, notification systems, and external services, enhancing system modularity and interoperability.
+	
+	\item \textbf{Flexibility and Rapid Development:} Flask’s simplicity makes it easy to develop, customize, and extend the backend for new features or integration with other Python scripts. This is essential in research or academic environments, where experimentation and frequent modifications are common.
+	
+	\item \textbf{Scalability and Deployment:} Flask applications can be containerized (e.g., using Docker) and scaled horizontally, supporting increased data volume or more complex analytical workloads.
+	
+	\item \textbf{Open Source and Community Support:} As an open-source project, Flask benefits from a large community and many available extensions, including those for authentication, security, and database connectivity, making it suitable for secure and reliable log management backends.
+\end{itemize}
 
 
 \subsection{Notification}
@@ -670,7 +728,7 @@ However, the current implementation still requires manual intervention to trigge
 \subsection{Log Preservation}
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=14cm]{figure/log_preservation.png}
+	\includegraphics[width=18cm]{figure/log_preservation.png}
 	\caption{Log Preservation Directory}
 	\label{fig:log-preservation-1}
 \end{figure}
@@ -679,12 +737,25 @@ In the figure \ref{fig:log-preservation-1}, it is a list that shows the date and
 
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=14cm]{figure/log_preservation_detail.png}
+	\includegraphics[width=18cm]{figure/log_preservation_detail.png}
 	\caption{Detail Log Preservation}
 	\label{fig:log-preservation-2}
 \end{figure}
 
 The display in the figure \ref{fig:log-preservation-2} shows the contents of log preservation. There are three logs that can be viewed: log attempt, log attempt step, and log general. Each log also has its hash value calculated to prevent log data changes or log tampering.
+
+In preserving forensic log evidence, integrity verification is critical to ensure that log files remain unchanged from collection to analysis. Two widely used hash functions are MD5 and SHA‑256:
+\begin{itemize}
+	\item \textbf{MD5}: Despite known vulnerabilities, MD5 remains a common checksum tool in digital forensics due to its speed and broad tool support. Empirical research confirms that MD5 collisions, while technically feasible, pose minimal practical risk in forensic contexts when combined with procedural controls~\cite{easttom2021cryptographic, kessler2016impact}.
+	\item \textbf{SHA‑256}: As part of the SHA‑2 family, SHA‑256 offers strong collision resistance and is widely regarded as secure for forensic evidence authentication. It resists both pre‑image and collision attacks, ensuring any alteration in log data is reliably detected~\cite{pagefreezer_sha256, numberanalytics_sha256}.
+\end{itemize}
+
+Adopting a dual-hash approach offers several benefits:
+\begin{enumerate}
+	\item \textbf{Performance flexibility}: MD5 provides rapid integrity checks for large volumes of log data, useful for routine verification.
+	\item \textbf{Forensic robustness}: SHA‑256 gives higher assurance for legal and forensic purposes, satisfying standards such as ISO 27037 and NIST guidelines.
+	\item \textbf{Risk mitigation}: In the rare case of an MD5 hash collision, the SHA‑256 comparison acts as a secondary safeguard.
+\end{enumerate}
 
 \begin{table}[H]
 	\centering
