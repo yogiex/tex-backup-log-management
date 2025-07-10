@@ -24,50 +24,68 @@ Warning--entry type for "akubelajar2024" isn't style-file defined
 --line 390 of file ref_database.bib
 Warning--entry type for "tracedata2024" isn't style-file defined
 --line 410 of file ref_database.bib
+Repeated entry---line 513 of file ref_database.bib
+ : @book{saunders2019researchmethods
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 528 of file ref_database.bib
+ : @article{adel2024ethicore
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 538 of file ref_database.bib
+ : @book{saunders2019researchmethods
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 554 of file ref_database.bib
+ : @article{hevner2004design
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "webster2020writingproblem"
+Warning--I didn't find a database entry for "smith2011objectives"
 Warning--to sort, need author or key in numberanalytics_sha256
 Warning--empty journal in kentnist800922006guide
 Warning--there's a number but no volume in mckemmish1999
 Warning--empty year in stackexchange_rsync_scp_checksum
 Warning--empty year in superuser_rsync_vs_scp
-You've used 47 entries,
+You've used 57 entries,
             2773 wiz_defined-function locations,
-            882 strings with 14241 characters,
-and the built_in function-call counts, 20335 in all, are:
-= -- 1861
-> -- 1010
-< -- 38
-+ -- 348
-- -- 300
-* -- 1526
-:= -- 3067
-add.period$ -- 157
-call.type$ -- 47
-change.case$ -- 237
-chr.to.int$ -- 46
-cite$ -- 100
-duplicate$ -- 973
-empty$ -- 1792
-format.name$ -- 383
-if$ -- 4335
+            932 strings with 15541 characters,
+and the built_in function-call counts, 24252 in all, are:
+= -- 2189
+> -- 1232
+< -- 44
++ -- 424
+- -- 366
+* -- 1828
+:= -- 3690
+add.period$ -- 188
+call.type$ -- 57
+change.case$ -- 289
+chr.to.int$ -- 56
+cite$ -- 120
+duplicate$ -- 1176
+empty$ -- 2132
+format.name$ -- 465
+if$ -- 5148
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 40
-newline$ -- 255
-num.names$ -- 184
-pop$ -- 503
+missing$ -- 57
+newline$ -- 306
+num.names$ -- 224
+pop$ -- 619
 preamble$ -- 1
-purify$ -- 192
+purify$ -- 234
 quote$ -- 0
-skip$ -- 756
+skip$ -- 897
 stack$ -- 0
-substring$ -- 738
-swap$ -- 106
+substring$ -- 814
+swap$ -- 116
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 507
+type$ -- 582
 warning$ -- 5
-while$ -- 192
+while$ -- 226
 width$ -- 0
-write$ -- 627
-(There were 8 warnings)
+write$ -- 758
+(There were 4 error messages)

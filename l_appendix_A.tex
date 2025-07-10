@@ -1,33 +1,78 @@
-\chapter{Hasil Wawancara dengan Staf IT}\label{app:appendix_A}
+\chapter{Interview Summary with IT Staff}\label{app:appendix_interview}
 
-Wawancara ini dilakukan dengan seorang staf dari tim IT pada hari Senin, 2 Juni 2025, secara tatap muka. Tujuan dari wawancara ini adalah untuk melakukan validasi terhadap kendala ketika melakukan investigasi pencarian log, khususnya dalam aspek pengelolaan log (log management) pada sistem ujian online berbasis Moodle.
+This appendix presents the summary of an interview conducted face-to-face with a university IT staff member on Monday, June 2, 2025. The interview aimed to validate and support the technical aspects of the research, especially in terms of log management and forensic readiness related to online examinations using Moodle.
 
-\section*{Pertanyaan 1}
-\textbf{Bagaimana cara mengambil data dari sumber log kecurangan?}
+\section*{Question 1}
+\textbf{How does the team respond to cheating incidents such as impersonation (jockeying)?}
 
-\vspace{0.3cm}
-\textbf{Jawaban:}
-\begin{enumerate}
-    \item \textbf{Metode:} Untuk pengambilan log dilakukan satu per satu. Untuk log dari aplikasi, prosesnya dilakukan melalui antarmuka Moodle dengan masuk ke bagian \textit{quiz} dan \textit{course}. Untuk database, digunakan referensi data dari tabel log standar (general log). Sedangkan untuk data attempt (percobaan ujian), dibutuhkan query tambahan yang menggabungkan beberapa tabel.
-    
-    \item \textbf{Kesulitan:} Terdapat kendala pada jumlah log yang sangat banyak (membengkak), sehingga pengolahan log masih bersifat reaktif. Log retention yang diterapkan bervariasi: log quiz attempt hanya disimpan selama 3 hari, log aplikasi (termasuk database) disimpan selama 2 tahun, sedangkan log dari layanan Cloudflare hanya disimpan selama 7 hari. Karena quiz sudah terintegrasi dengan sistem iGracias, log retention hanya 1 hari.
-    
-    \item \textbf{Output:} Harapan dari proses ini adalah agar penggunaan log dapat dilakukan secara tersentral untuk memudahkan analisis.
-\end{enumerate}
+\begin{itemize}
+	\item \textbf{Method:} Currently, the LAC team uses several indicators, such as identical values or patterns in quiz attempts. Monitoring is also done via Zoom, where suspicious behavior like continuous question reading or remote cursor movement can indicate possible impersonation.
+	\item \textbf{Challenges:} SEB uses a predefined application blacklist, but it is difficult to block portable applications that are not installed. 
+	\item \textbf{Output:} The hope is to create more sophisticated device-level restrictions to prevent such cheating tactics.
+\end{itemize}
 
+\section*{Question 2}
+\textbf{What log sources are typically identified (firewall, server, endpoint, application, etc.)?}
 
-\section*{Pertanyaan 2}
-\textbf{Bagaimana mekanisme penyimpanan log (on-premise/cloud, terenkripsi/tidak)?}
+\begin{itemize}
+	\item \textbf{Method:} Currently, the system is integrated with Cloudflare for proxy and firewall at both the application and database layers. Zoom recording logs are also used for additional evidence. Web server logs and user-agent strings are checked from Cloudflare.
+	\item \textbf{Challenges:} VPN usage is a concern. Although some regional restrictions are in place, forensics becomes more complex due to these circumventions.
+	\item \textbf{Output:} The goal is to produce forensic reports that can be understood by non-IT stakeholders for decision-making, such as determining if students should retake the exam.
+\end{itemize}
 
-\vspace{0.3cm}
-\textbf{Jawaban:}
-\begin{enumerate}
-    \item \textbf{Metode:} Mekanisme penyimpanan log dilakukan pada cloud menggunakan VM storage untuk data log seperti Apache dan layanan web. Sedangkan untuk log dari database disimpan pada VM database yang juga berada di cloud.
-    
-    \item \textbf{Kesulitan:} Tantangan yang dihadapi berkaitan dengan manajemen storage, terutama pada sistem multi-instance. Akses log antar instance dilakukan melalui NFS (Network File System). Proses sinkronisasi log dilakukan setiap menit menggunakan \texttt{rsync}, yang menyebabkan pembengkakan data. Selain itu, duplikasi log antar sistem menambah beban penyimpanan dan menyebabkan ukuran storage membengkak.
-    
-    \item \textbf{Output:} Harapannya adalah log dapat dikelola secara lebih terpusat (centralized) dan efisien dalam penggunaan storage. Namun, penggunaan kompresi (zipping) untuk efisiensi ruang penyimpanan berdampak pada penggunaan CPU yang tinggi, karena semakin tinggi kompresi, semakin besar beban pemrosesan (CPU usage).
-\end{enumerate}
+\section*{Question 3}
+\textbf{How is log data collected to detect cheating attempts?}
+
+\begin{itemize}
+	\item \textbf{Method:} Log data is collected manually. For application logs, the team accesses Moodle quiz and course logs. For database logs, standard general logs are used, and quiz attempt data requires querying multiple tables.
+	\item \textbf{Challenges:} The volume of log data is large and growing. As a result, the current process is reactive. Log retention policies are as follows: quiz attempt logs are retained for 3 days, application/database logs for 2 years, and Cloudflare logs for 7 days. Due to Moodle–iGracias integration, quiz logs are only retained for 1 day.
+	\item \textbf{Output:} There is a need to centralize log storage and retrieval.
+\end{itemize}
+
+\section*{Question 4}
+\textbf{How does the team determine which logs are relevant for security and incidents?}
+
+\begin{itemize}
+	\item \textbf{Method:} Database logs are used to trace user activity, including quiz start and end times. Web service logs and Cloudflare logs are used for additional verification.
+	\item \textbf{Challenges:} Identifying the right query formulas is essential. Translating technical logs into understandable formats for non-IT decision-makers is a major challenge.
+	\item \textbf{Output:} Reports are provided in Excel format, including exam schedules, login activity, IP addresses, devices, locations, quiz navigation, and exam states per page, along with timing details.
+\end{itemize}
+
+\section*{Question 5}
+\textbf{Are logs collected in real-time or periodically? If periodic, what is the interval?}
+
+\begin{itemize}
+	\item \textbf{Method:} Logs are collected on-demand based on LAC requests.
+	\item \textbf{Challenges:} Time gaps in collection cause log loss. Querying large datasets increases database server load. Zipping logs during exams may result in missing entries. VMSS auto-destroy policies cause Apache/PHP logs to be lost.
+	\item \textbf{Output:} The goal is to shift to a proactive, scheduled log collection system.
+\end{itemize}
+
+\section*{Question 6}
+\textbf{How long are logs stored, and is there a log retention policy?}
+
+\begin{itemize}
+	\item \textbf{Method:} Logs in Celoe are retained for 2 years. In LAC, logs are deleted one day after the exam (H+1).
+	\item \textbf{Challenges:} Data volume is increasing rapidly.
+	\item \textbf{Output:} There is a need to evaluate log retention efficiency and develop a policy aligned with storage capacity.
+\end{itemize}
+
+\section*{Question 7}
+\textbf{What is the log storage mechanism (on-premise/cloud, encrypted/not)?}
+
+\begin{itemize}
+	\item \textbf{Method:} Apache and web service logs are stored in cloud-based VM storage. Database logs are also stored in cloud-based VMs.
+	\item \textbf{Challenges:} Multi-instance architecture requires mapping volumes using NFS. Logs are synced using \texttt{rsync} every minute, which causes data duplication and bloated storage usage.
+	\item \textbf{Output:} The team hopes for more centralized log management. Compression reduces storage size but increases CPU usage due to high zipping overhead.
+\end{itemize}
+
+\section*{Question 8}
+\textbf{Is there a log backup mechanism for forensic purposes?}
+
+\begin{itemize}
+	\item \textbf{Method:} Logs are backed up, but forensic procedures have not been formally implemented. Currently, log retrieval is manual.
+	\item \textbf{Challenges:} There is no dedicated forensic team. Most decisions are made by the Celoe team with support from LAC.
+	\item \textbf{Output:} Moving toward centralized log collection would enhance forensic capability, which is currently very limited.
+\end{itemize}
 % \chapter{MISCELLANEOUS}\label{app:appendix_A}
 % This chapter discusses how to insert equation, figure and table on \LaTeX~document. All the object in this chapter just the examples to make you ease to write your awesome thesis.
 % \section{Equation \#examples}

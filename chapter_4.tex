@@ -11,7 +11,7 @@ The picture above \ref{fig:structure-menu} is a menu structure. the menu structu
 % =========================================================
 \section{Phase 1}
 
-\subsection{Define Problem Statement}
+\subsection{1.1 Define Problem Statement}
  \begin{figure}[H] 
 	     \centering% 
 	     \includegraphics[width=12cm]{figure/atk-def-online-exam.png}
@@ -55,7 +55,7 @@ This phase ensures that the framework's direction remains aligned with long-term
 As summarized in Table~\ref{tab:log_management_challenges}, organizations face several key challenges in effective log management. The presence of numerous log sources across heterogeneous systems complicates centralized collection and aggregation. Additionally, inconsistent log content and log formats hinder the standardization and normalization necessary for comprehensive analysis. Variations in timestamp formats and time synchronization issues further impede accurate event correlation and forensic investigation. Addressing these challenges is critical for establishing reliable, scalable, and forensically sound log management processes~\citet{kentnist800922006guide}.
 
 
-\subsection{Research Objectives}
+\subsection{1.2 Research Objectives}
 The main objective is to build a centralized and automated log management system that enables continuous monitoring and log acquisition in an online learning environment. The system should not wait for anomalies or incidents to occur, but instead establish an audit trail that is always active and available for future analysis.
 
 Key system requirements identified in this phase include:
@@ -70,7 +70,7 @@ Key system requirements identified in this phase include:
 \end{itemize}
 
 
-\subsection{Research Method}
+\subsection{1.3 Research Method}
 To achieve the objectives outlined in the previous section, a structured method was designed based on a system development approach, incorporating best practices from digital forensic readiness and proactive log management frameworks. The methodology integrates technical implementation, experimental testing, and expert validation to ensure both functional performance and forensic reliability.
 
 The core steps of the method are as follows:
@@ -125,32 +125,86 @@ This literature review provided both theoretical and practical direction for des
 
 
 \section{Phase 3}
-Phase 3 focuses on designing and customizing the forensic log management framework according to the objectives and insights gathered in the previous phases. This design stage emphasizes a modular, scalable, and proactive architecture aligned with the principles of NIST SP 800-92 and adapted from the framework structure of Adel et al.
+\subsection{3.1 Define Architecture}
+The definition of the framework architecture in this research is fundamentally based on established principles of log management, particularly those outlined in NIST SP 800-92. Log management is a systematic process encompassing the generation, collection, transmission, storage, analysis, monitoring, and preservation of log data.
 
-The design process begins by mapping the nine essential log management processes—ranging from log identification to reporting—into functional components within the online examination ecosystem. Each component is defined to operate independently yet cohesively to support end-to-end forensic readiness.
+Starting from this foundation, the architectural design for the proactive forensic framework was constructed to ensure that each critical phase of the log management lifecycle is represented and integrated as a modular component. The design began with the identification of log generation as the entry point, where all relevant events from the online exam environment are recorded.
 
-Key modifications and design decisions include:
+Next, the architecture incorporates log storage and log analysis modules, which are responsible for securely preserving all collected logs and enabling their systematic examination to identify suspicious activities or anomalies.
 
+Finally, the log monitoring component was positioned as the endpoint in the architecture, providing real-time visibility into system activities and immediate notification of potential incidents. This modular structure not only follows the best practices of log management but also ensures that digital evidence is handled in a way that supports forensic readiness, scalability, and traceability.
+
+By aligning the architecture with the standard log management lifecycle, the framework can comprehensively address the requirements for evidence integrity, timely detection, and effective response within online examination systems.
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=10cm]{figure/subphase-3.1-define-architecture.png}
+	\caption{Define Log Management Infrastructure}
+	\label{fig:lm-infrastructure}
+\end{figure}
+The initial architectural design of the proactive forensic log management framework was developed by mapping essential modules required for effective forensic readiness in an online examination environment. 
+
+\subsection{3.2 Tools and Technique}
+
+The implementation of the framework utilized a combination of open-source and proven technologies to ensure flexibility, security, and efficiency. Moodle LMS served as the core platform for online exams, deployed on Azure Virtual Machine Scale Sets (VMSS) to support scalability. Log collection was automated using Linux \texttt{cron} jobs, while \texttt{rsync} over SSH was employed for secure log transmission. Centralized log storage was managed on a Linux server, with integrity verification via MD5 and SHA-256 hash algorithms. The log analyzer and machine learning anomaly detection module (Isolation Forest) were built using Python and scikit-learn, exposed as RESTful endpoints through Flask. For real-time alerts, the Telegram Bot API was integrated. Reporting was handled through custom scripts exporting activity and evidence data to standardized PDF format.
+
+\subsection{3.3 Build-Evaluate Iteration}
+
+The design and development process followed an iterative build-evaluate cycle, guided by continuous testing and expert feedback. The initial prototype implemented basic modules: log identification, automated collection, storage, and dashboard-based log analysis. Early evaluations revealed limitations, such as incompatibility with certain log formats and manual notification dependency. In subsequent iterations, key enhancements were made:
 \begin{itemize}
-	\item \textbf{Modular architecture}: The framework is divided into clear modules such as log acquisition, transmission, storage, analysis, notification, and preservation. This allows independent testing and scaling.
-	
-	\item \textbf{Cloud deployment readiness}: The infrastructure is built using Azure Virtual Machine Scale Sets (VMSS) to support dynamic provisioning and load balancing during examination periods.
-	
-	\item \textbf{Integration with Moodle LMS}: The system is directly linked to Moodle’s internal logging and quiz attempt tracking mechanisms to enable real-time collection of learning and assessment activities.
-	
-	\item \textbf{Security and traceability}: The framework includes features for log timestamping, structured storage, and integrity verification using MD5 checksums to maintain evidential reliability.
-	
-	\item \textbf{Preparation for downstream analysis}: Logs are formatted in a machine-readable structure (CSV/JSON) to support future use in anomaly detection and forensic reporting.
+	\item Modular log parsers for heterogeneous sources (e.g., Moodle, Cloudflare, system logs).
+	\item Automated notification system using Telegram Bot API.
+	\item Extension of log retention from 3 to 90 days based on expert input.
+	\item Integration of dual-hash (MD5/SHA-256) log preservation.
+	\item Implementation of machine learning-based anomaly detection and audit trail features.
 \end{itemize}
 
-Figure~\ref{fig:framework-proposed} illustrates the overall framework design adapted from NIST SP 800-92, enhanced to suit the specific requirements of online exam environments. This architecture ensures that the framework remains extensible and can be evaluated under simulated forensic scenarios in later phases.
+\begin{table}[ht]
+	\caption{Summary of Build-Evaluate Iterations}
+	\centering
+	\begin{tabular}{|c|l|l|l|}
+		\hline
+		\textbf{Iteration} & \textbf{Component} & \textbf{Modification} & \textbf{Reason} \\ \hline
+		1 & Storage & Retention 3 $\rightarrow$ 90 days & Evidence preservation \\
+		2 & Analyzer & Modular log parsing & Multi-format support \\
+		3 & Preservation & Dual-hash mechanism & Evidence integrity \\
+		4 & Notification & Automated alerts (Telegram) & Faster response \\
+		5 & Analyzer & ML anomaly detection & Early misconduct detection \\
+		6 & Admin & Audit trail & Forensic traceability \\
+		\hline
+	\end{tabular}
+	\label{tab:build_eval}
+\end{table}
+
+\subsection{3.4 Evidence Source}
+
+A systematic mapping of potential evidence sources was carried out to focus the framework on logs that are most relevant for forensic investigation of online examinations. The prioritized sources included:
+\begin{itemize}
+	\item \textbf{Moodle Quiz Attempt Logs}: Detailed records of each student's exam session, time stamps, scores, and attempt patterns (\texttt{mdl\_quiz\_attempts}).
+	\item \textbf{User Activity Logs}: Login/logout events, role assignments, and actions (\texttt{mdl\_user}, \texttt{mdl\_logstore\_standard\_log}).
+	\item \textbf{Database Logs}: Error, warning, and transaction history supporting contextual analysis.
+	\item \textbf{Cloudflare Security Logs}: HTTP events and threat detection at the application layer.
+	\item \textbf{System and Web Server Logs}: OS-level and web server activity relevant to exam session environment.
+\end{itemize}
+Only evidence-rich and exam-related logs were selected for collection and analysis, reducing noise and focusing resources on data with high forensic value.
+
+\subsection{3.5 Integrate Adaptability and Modularity}
+
+To ensure sustainability and ease of future upgrades, the framework was developed with adaptability and modularity as core principles. Each module (collection, storage, analysis, preservation, notification) was designed as an independent service with standardized APIs and clear interfaces. This allowed for straightforward replacement or integration with other LMS platforms, logging tools, or machine learning engines. Modularity also enabled parallel development, testing, and scaling of individual components according to institutional requirements.
+
+\subsection{3.6 Validate the Structure}
+
+The completed framework structure and inter-component interactions were validated through a combination of expert interviews, simulation-based scenario testing, and peer review. Digital forensic and IT security specialists were consulted to assess the adequacy of the architecture, effectiveness of evidence sourcing, scalability, and forensic robustness. Feedback from validation exercises resulted in final refinements, including the strengthening of audit trails, optimization of automated alerting, and fine-tuning of anomaly detection thresholds. The validation confirmed that the framework is well-aligned with digital forensic best practices and adaptable to future technological and organizational changes.
+
 
 \section{Phase 4}
-Phase 4 involves the implementation and simulation of the designed forensic log management framework within a controlled test environment. This phase validates whether the architectural design and functional components can operate effectively in practice, especially in the context of online examination scenarios.
+\subsection{4.1 Setup Simulation Environment}
+To evaluate the forensic log management framework under controlled and reproducible conditions, a dedicated simulation environment was established using local computing resources. This approach was chosen to avoid the complexity and cost of public cloud or distributed architectures, and to provide greater flexibility for configuring, monitoring, and troubleshooting the testbed during experimentation.
 
-The simulation was conducted using a testbed environment that replicates the infrastructure of an actual university's online exam system.
+The local network was isolated from production systems, ensuring that all testing activities remained contained and risk-free. This configuration allowed for the simulation of realistic online examination workflows, log generation, and incident scenarios without external dependencies or cloud-specific constraints. The environment could be easily reset or reconfigured between experiments, supporting multiple rounds of framework testing, validation, and refinement.
 
-\subsection{Log Identification}
+
+\subsection{4.2 Implement Framework Component}
+\subsubsection{4.2.1 Log Identification}
 \begin{figure}[H] 
 	\centering
 	\includegraphics[height=17cm]{figure/log-source.png}
@@ -392,7 +446,7 @@ Fig \ref{fig:sandbox-mysql-dump} is the quiz attempts of exam participants. This
 \end{landscape}
 
 Fig \ref{tab:quiz_attempt_log} is logs data quiz attempts. By analyzing the collected data, valuable insights can be gained into the behavior of users during exams. One such insight can be gleaned from the time participants take to complete the exam.
-\subsection{Proactive Collection}
+\subsubsection{4.2.2 Proactive Collection}
 In modern system administration, the use of \textbf{cron job} on Linux/Unix systems is a prevalent method for performing automated, periodic tasks such as log extraction, data transformation, or backup. Cron enables precise scheduling through the \texttt{crontab} utility, which defines job frequency using five time fields: minute, hour, day, month, and weekday \citet{davidovic2015cron}.
 
 Academic validation of this method is found in related research. For instance, Hazwam et al. propose a cron-triggered Perl script to periodically parse honeypot logs into a database, significantly reducing storage requirements and improving system performance \citet{halim2019honeypot}. This demonstrates the effectiveness of cron-based scheduling for resource-efficient log handling.
@@ -416,7 +470,7 @@ Proactive collection for automated collection. automated collection systematic f
 Figure~\ref{fig:scheduler} shows the job scheduler used for periodic log collection. It automates the retrieval of log data from the database and system components, ensuring timely collection and synchronization to centralized storage to support proactive forensic.To extract detailed quiz attempt logs for further analysis, a structured SQL query was designed to retrieve records from multiple interconnected tables within the Moodle database schema. The focus of this query is to obtain finished quiz attempts from specific course modules associated with the quiz activity.
 
 To facilitate log analysis related to online examinations within the Moodle platform, a specific SQL query was constructed to extract quiz attempt data based on the associated course identifier (course id). This approach ensures that only relevant records tied to a particular course and quiz activity are processed, improving both performance and precision in downstream analytics.
-\subsection{Log Transmission}
+\subsubsection{4.2.3 Log Transmission}
 To support secure and efficient log transmission, the system utilizes the \texttt{rsync} protocol to transfer collected log files from the master virtual machine (VM), which hosts the examination platform, to a centralized log storage server. The use of \texttt{rsync} enables incremental synchronization, ensuring that only updated or newly generated log data is transmitted, thereby reducing bandwidth usage and improving transfer speed. This transmission occurs as part of a scheduled routine executed daily after examination sessions conclude, ensuring timely backup and availability of log data for further analysis and archival.
 
 Rsync was selected over SCP for log transmission because it supports delta transfer, checksum verification, and transfer resumption features that ensure both performance and integrity during multiple, incremental log backups. In contrast, SCP lacks these forensic-grade guarantees~\cite{nussbaum2012performance,superuser_rsync_vs_scp,stackexchange_rsync_scp_checksum}.
@@ -440,7 +494,7 @@ A scheduled task is configured using the Linux \texttt{crontab} utility to autom
 
 Machine learning workflow \ref{fig:mlops} which will read from the vm-b database. Data from the vm-b database will be processed by the machine learning model that has been created.
 
-\subsection{Log Storage}
+\subsubsection{4.2.4 Log Storage}
 In the context of proactive forensic log management, the log storage component plays a critical role in ensuring data availability, integrity, and traceability over time. Logs that have been proactively collected and transmitted must be preserved in a structured and secure manner to support future investigations, audits, and potential legal proceedings.
 
 \begin{figure}[H] 
@@ -514,7 +568,7 @@ Figure \ref{fig:logs-backup-linux} To ensure efficient log management and preven
 
 
 
-\subsection{Analysis of the Data}
+\subsubsection{4.2.5 Analysis of the Data}
 
 The data collection process has been completed. The next step involves analyzing the gathered data, specifically the data of exam participants who have attempted the EPRT quiz. Two key indicators will be considered:
 
@@ -668,7 +722,7 @@ F1-Score is a statistical measure that combines precision and recall with rate p
 Table \ref{tab:classification_report} is the result of evaluating the classification model using Precision, Recall, F1-score, and Support metrics. This model is most likely to be used for anomaly detection.The specified limit or threshold, such as scores below 40.
 
 
-\subsection{Log Monitoring}
+\subsubsection{4.2.6 Log Monitoring}
 In this research, a custom-developed log management dashboard was implemented to support the forensic readiness framework. Unlike commercial Security Information and Event Management (SIEM) solutions such as Splunk, IBM QRadar, or Elastic Stack (ELK), the custom dashboard was chosen due to its alignment with the goals of flexibility, lightweight deployment, educational accessibility, and forensic specificity.
 \textbf{Key reasons for using a custom dashboard include:}
 
@@ -721,7 +775,7 @@ The use of Flask REST API as the backend for log monitoring offers several signi
 \end{itemize}
 
 
-\subsection{Notification}
+\subsubsection{4.2.7 Notification}
 In the development of the forensic log management framework, Telegram was selected as the primary alerting mechanism for several practical and technical reasons. While various alternatives exist for real-time notification systems such as email, Slack, Microsoft Teams, or SIEM integrated alerting the use of the Telegram Bot API offers a unique combination of simplicity, cost-effectiveness, and flexibility suitable for research and institutional deployments~\cite{wang2023telegramalert}.
 
 \begin{figure}[H] 
@@ -734,7 +788,7 @@ In the development of the forensic log management framework, Telegram was select
 Fig \ref{fig:telegram-notification} notification feature through Telegram bots is to facilitate better monitoring and response in an online examination system. Notification of the proactive analysis log results will be sent via telegram. 
 
 However, the current implementation still requires manual intervention to trigger the notification to administrators or proctors. That is, although the log analysis system flags a suspicious case, an operator must manually confirm and forward the alert. This limitation reduces the level of automation in the incident response process. Future development should consider implementing a fully automated alerting mechanism, where notifications are sent immediately upon detection of a suspicious event.
-\subsection{Log Preservation}
+\subsubsection{4.2.8 Log Preservation}
 \begin{figure}[H] 
 	\centering
 	\includegraphics[width=18cm]{figure/log_preservation.png}
@@ -872,22 +926,42 @@ The explanation of Table \ref{tab:backup_info} is outlined as follows:
 	\item \textbf{url}: Download link for retrieving the backup file
 \end{itemize}
 
-\subsection{Reporting}
+\subsubsection{4.2.9 Reporting}
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=10cm]{figure/log_reporting_1.png}
+	\includegraphics[width=18cm]{figure/log_reporting_1.png}
 	\caption{Reporting User}
 	\label{fig:log_reporting_1}
 \end{figure}
 
 \begin{figure}[H] 
 	\centering
-	\includegraphics[width=10cm]{figure/log_reporting_2.png}
+	\includegraphics[width=18cm]{figure/log_reporting_2.png}
 	\caption{Reporting User Download}
 	\label{fig:log_reporting_2}
 \end{figure}
 
 The log reporting document serves as a consolidated summary of user activity during online examinations. It includes essential information such as the participant's name, timestamp of each recorded action, and a classification status indicating whether the behavior is considered suspicious. This structured report enables proctors or administrators to review potential anomalies efficiently and supports the decision-making process for further investigation or enforcement actions. The inclusion of timestamped events and flagged indicators enhances the traceability and forensic value of the evidence collected.
+\subsection{4.3 Document and Improvment}
+The documentation and improvement sub-phase is an essential part of the framework development cycle, ensuring that all challenges, limitations, and enhancements are systematically recorded and addressed. Throughout the simulation and implementation stages, detailed logs were maintained to capture issues such as configuration errors, integration problems, unexpected system behavior, and performance bottlenecks.
+
+All observed problems were documented in a structured format, including timestamps, descriptions, affected modules, and immediate mitigation steps taken. For example, early in the testing phase, mismatches in log extraction scheduling were identified, resulting in incomplete data collection. This issue was resolved by adjusting cron job intervals and synchronizing log transmission routines. Similarly, occasional false positives in the anomaly detection module prompted refinement of detection thresholds and feature selection strategies.
+
+The iterative documentation process not only enabled effective troubleshooting but also supported continuous improvement of the framework. Regular team reviews and expert feedback were incorporated, resulting in several key enhancements:
+\begin{itemize}
+	\item Optimization of log parsing scripts to handle edge cases and diverse data formats.
+	\item Implementation of more granular access controls for log storage and preservation.
+	\item Refinement of notification logic to avoid redundant or delayed alerts.
+	\item Adjustment of machine learning model parameters for improved detection accuracy.
+\end{itemize}
+
+This ongoing process of documentation and improvement ensures that the framework evolves to meet both functional and forensic requirements, while also establishing a comprehensive record for future audits and knowledge transfer. The result is a more robust, reliable, and operationally effective forensic log management system, ready for pilot deployment and further validation.
+
+Phase 4 involves the implementation and simulation of the designed forensic log management framework within a controlled test environment. This phase validates whether the architectural design and functional components can operate effectively in practice, especially in the context of online examination scenarios.
+
+The simulation was conducted using a testbed environment that replicates the infrastructure of an actual university's online exam system.
+
+
 
 
 \section{Phase 5}

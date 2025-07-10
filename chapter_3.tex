@@ -122,7 +122,19 @@ Based on the framework development approach proposed by \citet{adel2024ethicore}
 \end{figure}
 
 As shown in Figure~\ref{fig:framework-development-phase-1}, the first phase focuses on understanding the problem domain by identifying the challenges associated with digital forensic investigations in online learning systems. This phase includes formulating the problem statement, defining research objectives, and selecting appropriate research methods. The output of this phase forms the foundation for all subsequent design and development activities.
+\subsection{1.1 Define the Problem Statement}
 
+Defining a clear and focused problem statement is the foundational step in any scientific research. According to Creswell~\cite{creswell2014research}, a well-articulated problem statement helps to establish the context, scope, and rationale for the study. In the context of information security and forensic readiness, the problem statement should highlight specific challenges or gaps in current practice that warrant investigation. A strong problem statement not only directs the course of the research but also aids in identifying the target audience and the intended contribution of the work~\cite{webster2020writingproblem}. In digital forensic research, the importance of a precise problem definition is emphasized to ensure that subsequent design and evaluation activities remain aligned with the research purpose~\cite{casey2011digitalforensics}.
+
+\subsection{1.2 Research Objectives}
+
+The formulation of research objectives provides a structured and measurable pathway for addressing the identified problem. Research objectives serve to translate the broad research aim into specific, actionable goals~\cite{creswell2014research}. According to Saunders et al.~\cite{saunders2019researchmethods}, well-defined objectives guide the selection of research methods, the design of experiments, and the measurement of outcomes. In forensic information systems, objectives typically encompass aspects such as improving detection accuracy, ensuring evidence integrity, or increasing system automation~\cite{adel2024ethicore}. The clarity of research objectives is also crucial for evaluating research success and for maintaining focus throughout the study~\cite{smith2011objectives}.
+
+\subsection{1.3 Research Method}
+
+The choice of an appropriate research method is critical to achieving the stated objectives and ensuring the validity of research findings. Research methods can range from experimental and case study approaches to design science and qualitative inquiry~\cite{hevner2004design}. In information systems and forensic readiness research, the design science methodology is often employed, as it emphasizes the development and evaluation of artifacts (such as frameworks or tools) through iterative cycles of building and testing~\cite{hevner2004design}. This approach provides a rigorous structure for artifact construction, empirical evaluation, and continuous improvement. The selected method should align with the objectives, available resources, and the nature of the problem being addressed~\cite{creswell2014research, saunders2019researchmethods}.
+
+This approach ensures that the proposed framework is systematically developed, rigorously tested, and practically relevant for real-world application in academic settings.
 
 \begin{figure}[H]
     \centering
@@ -131,6 +143,22 @@ As shown in Figure~\ref{fig:framework-development-phase-1}, the first phase focu
     \label{fig:framework-development-phase-2}
 \end{figure}
 Figure~\ref{fig:framework-development-phase-2} presents Phase 2, which involves an extensive literature review to identify existing digital forensic frameworks, log management strategies, and relevant standards such as NIST SP 800-92. During this phase, the research area is scoped, updated literature is collected, search activity is recorded systematically, and selected works are critically analyzed. The aim is to extract best practices and determine the gaps the proposed framework should address.
+
+\subsection{2.1 Define the Research Area}
+
+Defining the research area is the starting point for a structured literature review process. This step involves clarifying the broad academic field, identifying specific topics or technologies relevant to the research objectives, and setting clear boundaries to ensure focus and coherence~\cite{booth2021systematic}. A well-defined research area allows for efficient resource allocation and prevents unnecessary exploration of unrelated domains~\cite{webster2002analyzing}.
+
+\subsection{2.2 Find the Updated Literature}
+
+A critical part of the literature review process is identifying and retrieving the most recent and relevant studies. Researchers utilize databases such as IEEE Xplore, Scopus, Web of Science, and Google Scholar to discover peer-reviewed journal articles, conference proceedings, and authoritative books~\cite{booth2021systematic}. Focusing on updated literature ensures that the research incorporates current trends, advances, and open challenges in the field~\cite{okoli2010guide}.
+
+\subsection{2.3 Keep Track of Searches}
+
+Documenting and organizing search strategies is essential for transparency and reproducibility in the review process. Saunders et al.~\cite{saunders2019researchmethods} recommend maintaining detailed records of search terms, databases accessed, inclusion/exclusion criteria, and results. This approach facilitates iterative refinement, helps avoid duplication, and supports systematic analysis of the literature landscape.
+
+\subsection{2.4 Review Literature Review}
+
+Reviewing and synthesizing the collected literature involves critically analyzing key contributions, methodologies, findings, and research gaps. According to Webster and Watson~\cite{webster2002analyzing}, an effective literature review should not merely summarize prior work, but also identify patterns, contradictions, and opportunities for further study. This step builds the theoretical foundation for the research and guides the design and justification of the proposed framework.
 
 
 \begin{figure}[H]
@@ -141,6 +169,29 @@ Figure~\ref{fig:framework-development-phase-2} presents Phase 2, which involves 
 \end{figure}
 In Phase 3, illustrated in Figure~\ref{fig:framework-development-phase-3}, the framework architecture is designed and adapted based on the needs identified in earlier phases. The design follows a modular approach, integrating components such as log identification, proactive collection, transmission, analysis, and reporting. Each module is specified to align with proactive forensics goals, including real-time monitoring and traceability.
 
+\subsection{3.1 Define the Architecture and Module}
+
+Defining the architecture is a critical initial step that involves outlining the major components and the overall structure of the framework to address the research objectives. According to Sommerville~\cite{sommerville2016software}, a clear architectural blueprint helps ensure that all system requirements are met and that each module interacts seamlessly with others. In forensic log management, this includes specifying modules for log collection, storage, analysis, notification, preservation, and reporting~\cite{adel2024ethicore}.
+
+\subsection{3.2 Tools and Technique}
+
+Selecting the right tools and techniques is essential for building an effective and efficient framework. The choice of technologies (such as databases, scripting languages, scheduling utilities, or machine learning libraries) should be aligned with project goals and system requirements~\cite{saunders2019researchmethods}. Employing proven tools increases development speed, system reliability, and ease of future integration~\cite{pressman2015software}.
+
+\subsection{3.3 Build-Evaluate Iterations}
+
+The build-evaluate iteration process refers to the incremental development and testing of the framework. Each module is developed, integrated, and evaluated in cycles, with feedback from testing used to refine and enhance the system~\cite{hevner2004design}. This iterative approach, widely adopted in design science research, ensures that the framework evolves in response to real-world requirements and detected issues.
+
+\subsection{3.4 Evidence Source}
+
+Identifying and mapping relevant evidence sources is crucial for the effectiveness of a forensic framework. This activity involves pinpointing all potential log sources—such as application logs, user activity, database logs, and network events—that may contribute to forensic investigations~\cite{casey2011digitalforensics}. Accurate evidence mapping ensures that only meaningful, evidence-rich data is collected and preserved.
+
+\subsection{3.5 Integrate Adaptability and Modularity}
+
+To ensure long-term sustainability and flexibility, the framework is designed with adaptability and modularity in mind. Modular design enables components to be independently upgraded or replaced, while adaptability supports integration with different environments or evolving requirements~\cite{bass2012softwarearch}. This principle aligns with software architecture best practices and enhances maintainability.
+
+\subsection{3.6 Validate Structure}
+
+The final structure of the framework must be validated to ensure completeness, correctness, and readiness for deployment. Validation may involve expert review, simulation, or scenario-based testing, focusing on the robustness, scalability, and forensic soundness of the overall system~\cite{hevner2004design, adel2024ethicore}. Thorough validation increases confidence that the framework meets both research and operational goals.
 
 \begin{figure}[H]
     \centering
@@ -151,6 +202,17 @@ In Phase 3, illustrated in Figure~\ref{fig:framework-development-phase-3}, the f
 
 Figure~\ref{fig:framework-development-phase-4} details the implementation of the designed framework within a simulated environment. This phase includes configuring log sources, implementing data flow, integrating analysis tools, and simulating typical forensic scenarios (e.g., cheating attempts, unauthorized access). The prototype is developed iteratively, allowing for refinement based on observed results.
 
+\subsection{4.1 Setup Simulation Environment}
+
+The setup simulation environment stage involves constructing a controlled and isolated testbed that closely replicates the operational context of the intended deployment. This step is crucial for conducting safe, repeatable, and valid experiments~\cite{sommerville2016software}. In this study, the simulation environment was established using locally managed virtual machines (VMs), each configured to represent essential system components such as the learning management system (LMS), database, log storage, and analytics servers. Isolating the simulation from production systems enables flexible configuration, easier monitoring, and risk-free scenario testing~\cite{bass2012softwarearch}.
+
+\subsection{4.2 Implement Framework Components}
+
+This stage consists of deploying, integrating, and configuring the core components of the forensic log management framework within the simulation environment. Each module—such as log identification, automated collection, secure transmission, storage, analysis, and reporting—is implemented according to the architectural design specified in previous phases. Employing modular development and proven tools enhances system reliability, facilitates testing, and enables targeted troubleshooting~\cite{pressman2015software}. Each component is first tested individually and then as part of the integrated workflow to ensure smooth operation and data flow across the system.
+
+\subsection{4.3 Document and Improvement}
+
+Documenting the entire implementation and simulation process is essential for transparency, reproducibility, and continuous improvement~\cite{hevner2004design}. All issues, bottlenecks, configuration errors, and observed outcomes are systematically recorded. This documentation serves as a foundation for iterative refinement, as feedback from simulation results and team/expert reviews is used to enhance component performance, fix errors, and optimize the overall framework. Iterative documentation and improvement support the evolution of the system toward greater robustness and operational effectiveness~\cite{saunders2019researchmethods}.
 
 \begin{figure}[H]
     \centering
