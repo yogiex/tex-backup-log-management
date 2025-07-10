@@ -2,24 +2,25 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Overview of Research to Online Examination System and Forensic Technique}}{7}{table.caption.17}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Stages of Framework Development and Corresponding Outputs}}{15}{table.caption.24}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Stages of Framework Development and Corresponding Outputs}}{16}{table.caption.24}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Related Works and Relevance to This Research}}{29}{table.caption.34}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Table Log Source, Description and Example Log Data}}{32}{table.4.2}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Course Log Records from User Attempts Quiz}}{37}{table.4.3}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Course Log Records from Moodle Course}}{38}{table.4.4}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Estimated Log Retention and Storage Planning Based on NIST SP 800-92}}{42}{table.caption.42}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Role Definition and Access Rights for Log Storage}}{43}{table.caption.43}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Manage Long-Term Log Data Storage}}{44}{table.caption.44}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Features Used for Analysis Data}}{44}{table.caption.45}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Example of column names and corresponding data in the online exam anomaly detection system}}{45}{table.caption.46}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Classification Report with Precision, Recall, and F1-score}}{49}{table.caption.49}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Example of standard\_log table structure}}{54}{table.caption.55}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Quiz Attempt Log Data Example}}{55}{table.caption.56}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Backup File Information}}{56}{table.caption.57}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Verifying testing framework adopted from NIST 800-92}}{58}{table.caption.60}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Comparison of Proactive and Reactive Forensic Based on Log Management Aspects}}{61}{table.caption.64}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Log Management Processes}}{62}{table.caption.65}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Challenges in Log Management}}{28}{table.caption.34}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Summary of Related Works and Relevance to This Research}}{31}{table.caption.35}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Table Log Source, Description and Example Log Data}}{34}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Course Log Records from User Attempts Quiz}}{39}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Course Log Records from Moodle Course}}{40}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Estimated Log Retention and Storage Planning Based on NIST SP 800-92}}{44}{table.caption.43}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Role Definition and Access Rights for Log Storage}}{45}{table.caption.44}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Manage Long-Term Log Data Storage}}{46}{table.caption.45}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Features Used for Analysis Data}}{46}{table.caption.46}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Example of column names and corresponding data in the online exam anomaly detection system}}{47}{table.caption.47}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Classification Report with Precision, Recall, and F1-score}}{51}{table.caption.50}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Example of standard\_log table structure}}{56}{table.caption.56}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Quiz Attempt Log Data Example}}{57}{table.caption.57}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Backup File Information}}{58}{table.caption.58}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Verifying testing framework adopted from NIST 800-92}}{60}{table.caption.61}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Comparison of Proactive and Reactive Forensic Based on Log Management Aspects}}{63}{table.caption.65}%
+\contentsline {table}{\numberline {4.17}{\ignorespaces Log Management Processes}}{64}{table.caption.66}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Examples of Logging Configuration Settings (Adapted from NIST SP 800-92)}}{65}{table.caption.66}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Examples of Logging Configuration Settings (Adapted from NIST SP 800-92)}}{67}{table.caption.67}%
 \addvspace {10\p@ }

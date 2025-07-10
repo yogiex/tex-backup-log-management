@@ -3,39 +3,39 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Phase log management from NIST 800-92}}{8}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Forensic Readiness, Proactive Forensics and Reactive Forensic }}{9}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Functional process for proactive and reactive digital forensics investigation system \cite {proactiveandreactivedigitalforensics}}}{9}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Functional process for proactive and reactive digital forensics investigation system \cite {proactiveandreactivedigitalforensics}}}{10}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Reference architecture of the university’s online examination system}}{12}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Architecture of Azure VM Scale Set used in the implementation}}{13}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Proactive Forensic Framework Development Phase \citet {adel2024ethicore}}}{14}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Proactive Forensic Framework Development Phase 1}}{16}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Proactive Forensic Framework Development Phase 2}}{17}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Proactive Forensic Framework Development Phase 3}}{18}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Proactive Forensic Framework Development Phase 4}}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Proactive Forensic Framework Development Phase 5}}{20}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Proactive Forensic Framework Development Phase 6}}{21}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Reference architecture of the university’s online examination system}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Architecture of Azure VM Scale Set used in the implementation}}{14}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Proactive Forensic Framework Development Phase \citet {adel2024ethicore}}}{15}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Proactive Forensic Framework Development Phase 1}}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Proactive Forensic Framework Development Phase 2}}{18}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Proactive Forensic Framework Development Phase 3}}{19}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Proactive Forensic Framework Development Phase 4}}{20}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Proactive Forensic Framework Development Phase 5}}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Proactive Forensic Framework Development Phase 6}}{22}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Log Management Structure Menu}}{24}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Attack Defence Tree Model \citet {rosmansyah2019attackdefensetreeonaeexamsystem}}}{25}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital Forensic Evidence Loss \cite {larchenko2025mindmap}}}{26}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Log Source}}{31}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces ERD from Several Column Tables}}{36}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Backup from mysql dump}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Scheduler for proactive collection}}{39}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Exporter script}}{40}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Machine learning workflow}}{41}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Log data backup}}{42}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Flowchart ML Training }}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Flowchart Log Analysis }}{47}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Log Attempt Step}}{50}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Finding user}}{51}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Notification}}{52}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Log Preservation Directory}}{53}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Detail Log Preservation}}{53}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Reporting User}}{56}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Reporting User Download}}{57}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Phase log management from NIST 800-92 2006 \citet {kentnist800922006guide}}}{59}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Proactive Forensics \citet {proactiveandreactivedigitalforensics}}}{59}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Proposed framework adapted from NIST 800-92}}{60}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Log Management Structure Menu}}{25}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Attack Defence Tree Model \citet {rosmansyah2019attackdefensetreeonaeexamsystem}}}{26}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital Forensic Evidence Loss \cite {larchenko2025mindmap}}}{27}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Log Source}}{33}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ERD from Several Column Tables}}{38}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Backup from mysql dump}}{39}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Scheduler for proactive collection}}{41}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Exporter script}}{42}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Machine learning workflow}}{43}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Log data backup}}{44}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Flowchart ML Training }}{48}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Flowchart Log Analysis }}{49}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Log Attempt Step}}{52}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Finding user}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Notification}}{54}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Log Preservation Directory}}{55}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Detail Log Preservation}}{55}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Reporting User}}{58}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Reporting User Download}}{59}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Phase log management from NIST 800-92 2006 \citet {kentnist800922006guide}}}{61}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Proactive Forensics \citet {proactiveandreactivedigitalforensics}}}{61}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Proposed framework adapted from NIST 800-92}}{62}{figure.caption.64}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
