@@ -159,17 +159,20 @@ The design and development process followed an iterative build-evaluate cycle, g
 \end{itemize}
 
 \begin{table}[ht]
-	\caption{Summary of Build-Evaluate Iterations}
+	\caption{Summary of Build-Evaluate Iterations and Implementation Outcomes}
 	\centering
-	\begin{tabular}{|c|l|l|l|}
+	\begin{tabular}{|c|l|l|l|l|}
 		\hline
-		\textbf{Iteration} & \textbf{Component} & \textbf{Modification} & \textbf{Reason} \\ \hline
-		1 & Storage & Retention 3 $\rightarrow$ 90 days & Evidence preservation \\
-		2 & Analyzer & Modular log parsing & Multi-format support \\
-		3 & Preservation & Dual-hash mechanism & Evidence integrity \\
-		4 & Notification & Automated alerts (Telegram) & Faster response \\
-		5 & Analyzer & ML anomaly detection & Early misconduct detection \\
-		6 & Admin & Audit trail & Forensic traceability \\
+		\textbf{Iter.} & \textbf{Component} & \textbf{Modification} & \textbf{Reason} & \textbf{Outcome (Phase 4)} \\ \hline
+		1 & Log Identification & From generic log generation to selective log identification & Reduce data noise, focus on evidence & Data collected more relevant; noise reduced \\
+		2 & Log Transmission & Implement secure log transmission to centralized storage (using \texttt{rsync}) & Need for reliable and centralized evidence storage & All logs successfully transmitted and backed up in central server \\
+		3 & Log Storage & Extend log retention from 3 to 90 days & Evidence preservation & All evidence available for 3 months; no data loss \\
+		4 & Log Monitoring & Deploy log monitoring dashboard for real-time oversight of log storage & Ensure timely detection and visibility of stored logs & Logs visualized and monitored in real-time; rapid issue detection possible \\
+		5 & Notification & Automated Telegram alert system & Faster incident response & Incident notification delivered instantly in tests \\
+		6 & Log Analysis & Integrate machine learning for log analysis (Isolation Forest) & Proactive detection of suspicious behavior & Anomalous behaviors flagged correctly by ML model \\
+		7 & [Add component here if needed] & [Modification] & [Reason] & [Outcome] \\
+		8 & Log Preservation & Dual-hash (MD5/SHA-256) on logs & Ensure integrity & Hash mismatch detected when file tampered \\
+		9 & Log Reporting & Generate structured reports on exam participant activities & Provide actionable and auditable evidence for investigators & Detailed reports on participant actions produced and available for download \\
 		\hline
 	\end{tabular}
 	\label{tab:build_eval}

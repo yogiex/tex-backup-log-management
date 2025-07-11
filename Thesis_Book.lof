@@ -13,30 +13,30 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Proactive Forensic Framework Development Phase 3}}{21}{figure.caption.27}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Proactive Forensic Framework Development Phase 4}}{23}{figure.caption.28}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Proactive Forensic Framework Development Phase 5}}{25}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Proactive Forensic Framework Development Phase 6}}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Proactive Forensic Framework Development Phase 6}}{27}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Log Management Structure Menu}}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Attack Defence Tree Model \citet {rosmansyah2019attackdefensetreeonaeexamsystem}}}{30}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital Forensic Evidence Loss \cite {larchenko2025mindmap}}}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Define Log Management Infrastructure}}{36}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Log Source}}{39}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces ERD from Several Column Tables}}{44}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Backup from mysql dump}}{45}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheduler for proactive collection}}{47}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Exporter script}}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Machine learning workflow}}{49}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Log data backup}}{50}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Flowchart ML Training }}{54}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Flowchart Log Analysis }}{55}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Log Attempt Step}}{58}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Finding user}}{59}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Notification}}{60}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Log Preservation Directory}}{61}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Detail Log Preservation}}{61}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Reporting User}}{65}{figure.caption.70}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Reporting User Download}}{65}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Phase log management from NIST 800-92 2006 \citet {kentnist800922006guide}}}{68}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Proactive Forensics \citet {proactiveandreactivedigitalforensics}}}{68}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Proposed framework adapted from NIST 800-92}}{69}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Log Management Structure Menu}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Attack Defence Tree Model \citet {rosmansyah2019attackdefensetreeonaeexamsystem}}}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital Forensic Evidence Loss \cite {larchenko2025mindmap}}}{33}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Define Log Management Infrastructure}}{38}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Log Source}}{41}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces ERD from Several Column Tables}}{46}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Backup from mysql dump}}{47}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheduler for proactive collection}}{49}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Exporter script}}{50}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Machine learning workflow}}{51}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Log data backup}}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Flowchart ML Training }}{56}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Flowchart Log Analysis }}{57}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Log Attempt Step}}{60}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Finding user}}{61}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Notification}}{62}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Log Preservation Directory}}{63}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Detail Log Preservation}}{63}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Reporting User}}{67}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Reporting User Download}}{67}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Phase log management from NIST 800-92 2006 \citet {kentnist800922006guide}}}{70}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Proactive Forensics \citet {proactiveandreactivedigitalforensics}}}{70}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Proposed framework adapted from NIST 800-92}}{71}{figure.caption.75}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
